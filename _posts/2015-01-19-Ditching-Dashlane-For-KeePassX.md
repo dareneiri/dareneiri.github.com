@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Ditching Dashlane for KeePassX
+published: true
 ---
 
 This past weekend, I received an email from Dashlane requesting to automatically renew my premium membership. Dashlane is password manager and "digital wallet," and it works pretty well. Using it on Mac OS X, the interface is clean, the extensions for the browsers work without any issues, and also includes two-factor authentication via SMS. But for a premium membership, which includes syncing across all your devices and browsers, the cost is quite steep at $29.99 per year. I bought mine for $19.99 per year but it seems like they increased the price, so the price increase made me rethink about whether Dashlane is even worth it anymore.
@@ -13,7 +14,8 @@ If you use only one or two passwords -- or even a handful of passwords -- that i
 
 And forget about complex passwords, because they're [not as safe as you might think](http://arstechnica.com/security/2013/06/password-complexity-rules-more-annoying-less-effective-than-length-ones/). xkcd also covered this topic:
 
-![xkcd_comic](/http://imgs.xkcd.com/comics/password_strength.png)
+
+![xkcd_comic](http://imgs.xkcd.com/comics/password_strength.png)
  
 
 ###Password Manager Options
@@ -25,5 +27,3 @@ LastPass offers a premium membership which includes across-device-syncing for $1
 There are a few other options, including [1Password](https://agilebits.com/onepassword). LifeHacker also very recently covered the "[Five Best Password Managers.](http://lifehacker.com/5529133/five-best-password-managers)"
 
 I ended up settling on [KeePass](http://keepass.info/). It is open-source (free!), and it is cross-platform (Mac, Windows, Linux). Dashlane does not have support for Linux, but LastPass does. Syncing across all your devices is quite simple as well, as you can keep your encrypted password database synced using Dropbox, Google Drive, or any other cloud file-synchronization service. In the next post I will write up how to install and set up KeePass for Mac OS X -- it is not as straight-forward as you would expect.
-
- 
