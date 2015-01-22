@@ -20,6 +20,3 @@ _This post is intended for Mac users setting up KeePassX and getting autologin +
 	
 2. item
 3. item
-
-
-
