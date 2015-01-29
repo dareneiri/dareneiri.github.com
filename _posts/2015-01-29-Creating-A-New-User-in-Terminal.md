@@ -6,24 +6,24 @@ published: true
 
 The following commands can be used to create a new user in Terminal via SSH:
 
-	`dscl . -create /Users/new_user`
+<pre>dscl . -create /Users/new_user</pre>
 
-	`dscl . -create /Users/new_user UserShell /bin/bash`
+<pre>dscl . -create /Users/new_user UserShell /bin/bash</pre>
 
-	`dscl . -create /Users/new_user RealName “USER NAME“`
+<pre>dscl . -create /Users/new_user RealName “USER NAME“</pre>
 
-	`dscl . -create /Users/new_user UniqueID 503`
+<pre>dscl . -create /Users/new_user UniqueID 503</pre>
 
-	`dscl . -create /Users/new_user PrimaryGroupID 20`
+<pre>dscl . -create /Users/new_user PrimaryGroupID 20</pre>
 PrimaryGroupID of 80 creates an Admin user. Change to PrimaryGroupID of 20 to create a Standard user.
 
 
-	`dscl . -create /Users/new_user NFSHomeDirectory /Users/new_user`
+<pre>dscl . -create /Users/new_user NFSHomeDirectory /Users/new_user</pre>
     
-	`dscl . -passwd /Users/new_user changeme`
+<pre>dscl . -passwd /Users/new_user changeme</pre>
     
-	`dscl . append /Groups/admin GroupMembership new_user`
+<pre>dscl . append /Groups/admin GroupMembership new_user</pre>
     
 You may need to create the home directory as well:
 
-	`createhomedir -u new_user`
+<pre>createhomedir -u new_user</pre>
