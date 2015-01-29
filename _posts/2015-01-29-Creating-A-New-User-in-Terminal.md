@@ -25,4 +25,4 @@ PrimaryGroupID of 80 creates an Admin user. Change to PrimaryGroupID of 20 to cr
 	`dscl . append /Groups/admin GroupMembership new_user`
     
 You may need to create the home directory as well:
-	'createhomedir -u new_user'
+	`createhomedir -u new_user`
