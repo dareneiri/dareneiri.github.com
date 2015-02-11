@@ -25,7 +25,8 @@ _This post is intended for Mac users setting up KeePassX and getting autologin +
     <pre>cmake -DCMAKE_INSTALL_PREFIX=$HOME/local/apps/keepassxhttp -DCMAKE_VERBOSE_MAKEFILE=ON</pre>
     <pre>make</pre>
     <pre>make install</pre>
-4. Congrats! You compiled an app from source! Now, if you navigate to your /Users/USERNAME/local/apps/keepassxhttp, where USERNAME is your home directory name, then you will see the KeePassX application. To navigate to the /local folder quickly, make sure Finder is active and on the menu bar, select Go > Go to Folder...
+4. Congrats! You compiled an app from source! You will find the Application installed in your Applications folder. If not, look at the last line in Terminal and see where the install path is:
+    <pre>-- Installing: /Applications/KeePassX.app/</pre>
 
 ## Setting up the ChromeIPass Browser Extension
 1. Once you open the KeePassX application, ChromeIPass may need to establish a connection to the application.
