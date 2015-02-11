@@ -1,26 +1,59 @@
-# Dependencies
-markdown:            redcarpet
-highlighter:         pygments
+# Site wide configuration
 
-# Permalinks
-#
-# Use of `relative_permalinks` ensures post links from the index work properly.
-permalink:           pretty
-relative_permalinks: true
+title:            A Stack of TextEdit Files
+locale:           'a mess of notes'
+url:              http://dareneiri.github.io
 
-# Setup
-title:               A Stack of TextEdit Files
-tagline:             'a mess of notes'
-description:         
-url:                 http://dareneiri.github.io
-baseurl:             /
-paginate:            5
 
-# About/contact
-author:
-  name:              Daren Eiri
-  url:               http://dareneiri.com
-  email:             dareneiri@gmail.com
+# Jekyll configuration
 
-# Custom vars
-version:             1.0.0
+permalink:   /:categories/:title/
+markdown:    kramdown
+highlighter: pygments
+sass:
+  sass_dir: _sass
+  style: compressed
+gems:
+  - jekyll-sitemap
+
+kramdown:
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  use_coderay: false
+
+
+# Site owner
+owner:
+  name: Daren Eiri
+  avatar: bio-photo.jpg
+  bio: "Describe your self."
+  email: dareneiri@gmail.com
+  disqus-shortname: 
+  twitter: #dareneiri
+  facebook: 
+  google:
+    plus: #username
+    analytics: 
+    verify: 
+    ad-client: 
+    ad-slot: 
+  bing-verify: 
+  github: #dareneiri
+  stackoverflow: 
+  linkedin: #dareneiri
+  instagram: #dareneiri
+  lastfm: 
+  tumblr: 
+  pinterest: 
+  foursquare: 
+  steam: 
+  dribbble: 
+  youtube: 
+  soundcloud: 
+  weibo: 
+  flickr: #dareneiri
+
+include: [".htaccess"]
+exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "Gemfile", "Gemfile.lock", "LICENSE", "README.md"]
