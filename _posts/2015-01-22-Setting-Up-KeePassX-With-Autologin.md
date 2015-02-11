@@ -19,7 +19,7 @@ _This post is intended for Mac users setting up KeePassX and getting autologin +
 ## Compiling the Build
 1. Once you download the source, make sure you know where it saved (i.e., your Downloads folder). Unzip it.
 2. Then you need to open Terminal (Applications > Utilities > Terminal.app) and navigate to that folder. In Terminal, type:
-	<pre>cd Downloads/</pre>
+	<pre>cd Downloads/keepassx-master</pre>
 3. Then run: 
 	<pre>brew install qt cmake libgcrypt zlib libmicrohttpd</pre>
     <pre>cmake -DCMAKE_INSTALL_PREFIX=$HOME/local/apps/keepassxhttp -DCMAKE_VERBOSE_MAKEFILE=ON</pre>
