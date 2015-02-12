@@ -28,10 +28,10 @@ kramdown:
 owner:
   name: Daren Eiri
   avatar: bio-photo.jpg
-  bio: "Describe your self."
+  bio: "Trained in biological research, but working in IT"
   email: dareneiri@gmail.com
   disqus-shortname: 
-  twitter: #dareneiri
+  twitter: dareneiri
   facebook: 
   google:
     plus: #username
@@ -40,10 +40,10 @@ owner:
     ad-client: 
     ad-slot: 
   bing-verify: 
-  github: #dareneiri
+  github: dareneiri
   stackoverflow: 
-  linkedin: #dareneiri
-  instagram: #dareneiri
+  linkedin: dareneiri
+  instagram: dareneiri
   lastfm: 
   tumblr: 
   pinterest: 
@@ -53,7 +53,7 @@ owner:
   youtube: 
   soundcloud: 
   weibo: 
-  flickr: #dareneiri
+  flickr: dareneiri
 
 include: [".htaccess"]
 exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "Gemfile", "Gemfile.lock", "LICENSE", "README.md"]
