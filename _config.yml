@@ -24,6 +24,7 @@ kramdown:
   use_coderay: false
 
 
+
 # Site owner
 owner:
   name: Daren Eiri
@@ -40,7 +41,7 @@ owner:
     ad-client: 
     ad-slot: 
   bing-verify: 
-  github: dareneiri
+  github: #dareneiri
   stackoverflow: 
   linkedin: dareneiri
   instagram: dareneiri
