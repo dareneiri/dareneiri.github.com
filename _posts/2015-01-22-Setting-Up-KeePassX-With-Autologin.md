@@ -2,6 +2,7 @@
 layout: post
 title: Setting Up KeePassX with Browser Support
 published: true
+excerpt: "How to compile the KeePassX build with KessPassHTTP support"
 comments: true
 ---
 

@@ -2,6 +2,7 @@
 layout: post
 title: Ditching Dashlane for KeePassX
 published: true
+excerpt: "Dashlane raised its subscription price to $29/year. It's time to ditch it for an open source alternative."
 comments: true
 ---
 

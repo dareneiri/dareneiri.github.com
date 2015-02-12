@@ -2,6 +2,7 @@
 layout: post
 title: Creating A New User in Terminal (Mac OS X) 
 published: true
+excerpt: "Quick notes on Terminal commands used to create a new user account in Mac OS X"
 comments: true
 ---
 
