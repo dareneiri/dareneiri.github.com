@@ -510,7 +510,7 @@ $button-size: 1.5rem;
 }
 
 /* TOC trigger for collapsing */
-drawer {
+#drawer {
 	max-height: 100%;
 	overflow: hidden;
 	&.js-hidden {
