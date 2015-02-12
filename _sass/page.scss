@@ -457,7 +457,7 @@ $button-size: 1.5rem;
 		@include prefix(12,0.5);
 		@include suffix(12,0.5);
 		position: absolute;
-		top: 15.5em;
+		top: 5.5em;
 		right: 0;
 		background-color: $white;
 	}
@@ -510,7 +510,7 @@ $button-size: 1.5rem;
 }
 
 /* TOC trigger for collapsing */
-#drawer {
+drawer {
 	max-height: 100%;
 	overflow: hidden;
 	&.js-hidden {
