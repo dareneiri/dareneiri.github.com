@@ -2,6 +2,7 @@
 layout: post
 title: Creating A New User in Terminal (Mac OS X) 
 published: true
+comments: true
 ---
 
 The following commands can be used to create a new user in Terminal via SSH:

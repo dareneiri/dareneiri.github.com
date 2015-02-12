@@ -2,6 +2,7 @@
 layout: post
 title: Setting Up KeePassX with Browser Support
 published: true
+comments: true
 ---
 
 _This post is intended for Mac users setting up KeePassX and getting autologin + browser (specifically, Chrome) support to work. At the time of this writing, the official build does not support autologin. However, there are other versions of KeePassX that are available to use, you just need to compile them._
