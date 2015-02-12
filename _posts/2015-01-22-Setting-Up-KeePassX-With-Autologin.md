@@ -33,7 +33,8 @@ _This post is intended for Mac users setting up KeePassX and getting autologin +
 ## Setting up the ChromeIPass Browser Extension
 1. Once you open the KeePassX application, ChromeIPass may need to establish a connection to the application.
 	You will get notified by the extension to have KeePassHTTP connected. All you need to do is launch KeePassX, and click on the extension icon to establish the connection. 
-    ![chromipass](http://dareneiri.github.io/downloads/Screen%20Shot%202015-01-22%20at%205.57.55%20AM.png)
+
+**Keep in mind** that you will need to have KeePassX remained open so that ChomeIPass can recognize that Keepasshttp is running {: .notice}
 
 ## Resources
 - [Forked repo of KeePassX with ChromeIPass support](https://github.com/jdachtera/keepassx)
