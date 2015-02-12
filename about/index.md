@@ -6,8 +6,7 @@ modified: 2014-08-08T20:53:07.573882-04:00
 comments: false
 image:
   feature: sample-image-2.jpg
-  credit: WeGraphics
-  creditlink: http://wegraphics.net/downloads/free-ultimate-blurred-background-pack/
+  credit: Eiri
 ---
 
 
@@ -17,10 +16,9 @@ I am a long-time IT/help desk employee, first at UC San Diego's Academic Computi
 
 Now, I'm crossing my fingers and getting back to my childhood roots -- fixing computers and exploring latest developments in technology -- but I would not call myself a programmer. 
 
-My goals are to work my way through code, get a bit more familar with scripting, and find something I am passionate about. I am here to learn
+My goals are to work my way through code, get a bit more familar with scripting, and find something I am passionate about. I am here to learn. That is what you will find here. 
 
-## What is the Deal With TextEdit Files?
-When I learn something new, especially when it came to getting jekyll to work with GitHub, and learning Git at the same time, I make notes in TextEdit. That is not always the best solution. This is an attempt to post my own discoveries about troubleshooting my own problems online. Maybe someone will find this useful, but at the very least it will help me archive my notes in a more organized, and comprehensive manner, as compared to a bunch of TextEdit files. 
+ 
 
 ## Setup
 
@@ -28,11 +26,5 @@ When I learn something new, especially when it came to getting jekyll to work wi
 * Built using [Jekyll](http://jekyllrb.com), and hosted for free on [GitHub Pages](https://pages.github.com)
 * I could have easily done with this WordPress, but that would have been too simple!
 
-
-## Contact
-* Twitter: [@dareneiri](https://twitter.com/dareneiri)
-* Instagram: [@dareneiri](http://instagram.com/dareneiri)
-* LinkedIn: [/in/dareneiri](http://linkedin.com/in/dareneiri)
-* Email: dareneiri.com
 
 Thanks for reading!
