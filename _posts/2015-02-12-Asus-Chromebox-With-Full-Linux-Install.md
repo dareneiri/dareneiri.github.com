@@ -26,7 +26,8 @@ The [Asus Chromebox](http://www.asus.com/us/ASUS_Chromebox/) fits the bill perfe
 
 
 ## Requirements
-If you aim to accomplish the same setup for your Chromebox as I have, follow the guide below. Again, this is for a standalone Linux Ubuntu boot on the Asus Chromebox. **This process will remove ChromeOS** and does not have the option to dual-boot. Once you have finished this process, you will have accomplished the following: 
+If you aim to accomplish the same setup for your Chromebox as I have, follow the guide below. Again, this is for a standalone Linux Ubuntu boot on the Asus Chromebox. **This process will remove ChromeOS** and does not have the option to dual-boot.Once you have finished this process, you will have accomplished the following: 
+
 1. An Asus Chromebox with Ubuntu Linux 14.04, as a standalone boot
 2. Plex Home Theater installed on the Chromebox, accessing Plex Media Server on the Synology NAS
 3. VNC server up and running, to remotely access the system
@@ -93,9 +94,9 @@ I am assuming you already have Plex Media Server already working with all your m
         <figcaption>Enable the options seen above for remote desktop sharing</figcaption>
     </figure>  
     4. You then need to disable encryption, since having this enabled seems to be an issue. 
-    <pre>gsettings set org.gnome.Vino require-encryption false</pre>
+        <pre>gsettings set org.gnome.Vino require-encryption false</pre>
     5. This change may not stay after reboot, so you can edit a file by typing the following in Terminal:
-    <pre>sudo apt-get install dconf-tools</pre>
+        <pre>sudo apt-get install dconf-tools</pre>
     6. Search for dconf Editor in dash, then navigate to org > gnome > desktop > remote-access
     7. If you will be using remote desktop within your local network (at home) then uncheck "enabled" 
 
