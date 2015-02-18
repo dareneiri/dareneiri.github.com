@@ -98,7 +98,7 @@ I am assuming you already have Plex Media Server working with all your media. I 
     6. Search for dconf Editor in dash, then navigate to org > gnome > desktop > remote-access
     7. Some have reported unchecking "enabled" but others haven't had much success and [resorted to finding other solutions](http://discourse.ubuntu.com/t/remote-desktop-sharing-in-ubuntu-14-04/1640/4). Defintely review those options if you're haivng problems accessing VNC after rebooting. '
     
-### Summary
+## Summary
 What you've accomplished, if my documentation is thorough enough (if not please let me know) is setting up the Asus Chromebox as an HTPC, with Ubuntu 14.04 installed, along with Plex Home Theater and local VNC access. If you would like to have access to your Chromebox via remote desktop outside your network (e.g., at work or another house) then I *strongly* recommend setting up SSH tunneling for VNC; passwords are not encrypted over the network. 
     
  
