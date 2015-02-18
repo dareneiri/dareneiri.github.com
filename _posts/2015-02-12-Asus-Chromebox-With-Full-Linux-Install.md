@@ -57,10 +57,10 @@ I am assuming you already have Plex Media Server already working with all your m
    3. You will be prompted for a username. Enter:
         <pre>chronos</pre>
    4. Enter the following to download the EZ setup script:
-   <pre>curl -L -O http://goo.gl/3Tfu5W
+        <pre>curl -L -O http://goo.gl/3Tfu5W
    sudo bash 3Tfu5W</pre>
        as an alternate, if the above link does not work:
-   <pre>curl -L -O https://db.tt/vUPL3OrH
+        <pre>curl -L -O https://db.tt/vUPL3OrH
    sudo bash vUPL3OrH</pre>
    5. You will be provided some options to choose from. Enter **5**, for **Install/update: custom coreboot Firmware**
    6. Type **Y** to continue
@@ -76,21 +76,22 @@ I am assuming you already have Plex Media Server already working with all your m
 2. Run Updates first. See the [Maintenence commands from Ubuntu Documentation](https://help.ubuntu.com/community/AptGet/Howto#Maintenance_commands) for an overview of what to run   
 3. Installing Plex Home Theater
     1. Add the plexappp repository by following [this documentation](https://launchpad.net/~plexapp/+archive/ubuntu/plexht). If it's confusing, you should do the following commands in Terminal:
-    <pre>sudo add-apt-repository ppa:plexapp/plexht </pre>
+        <pre>sudo add-apt-repository ppa:plexapp/plexht </pre>
     2. Install cmake:
-    <pre>sudo apt-get install cmake </pre>
+        <pre>sudo apt-get install cmake </pre>
     3. Update the respositories:
-    <pre>sudo apt-get update</pre>
+        <pre>sudo apt-get update</pre>
     4. Install Plex Home Theater:
-    <pre>sudo apt-get install plexhometheater</pre>
+        <pre>sudo apt-get install plexhometheater</pre>
     5. Now all you need to do is configure PHT to talk to your PMS. I did this by setting my server settings manually in Preferences.
 4. Configuring VNC - Remote Desktop
     1. Ubuntu comes with Desktop Sharing by default. This sets up a VNC server. 
     2. Type "Desktop Sharing" in the dash (the launcher/finder)
     3. Configure the settings so that the following in enabled as seen below:
     <figure>
-  <img src="{{ site.url }}/images/remoteubuntuconfig.png" alt="ubuntuconfig">Enable the options seen above for remote desktop sharing</figcaption>
-</figure>  
+        <img src="{{ site.url }}/images/remoteubuntuconfig.png" alt="ubuntuconfig">
+        <figcaption>Enable the options seen above for remote desktop sharing</figcaption>
+    </figure>  
     4. You then need to disable encryption, since having this enabled seems to be an issue. 
     <pre>gsettings set org.gnome.Vino require-encryption false</pre>
     5. This change may not stay after reboot, so you can edit a file by typing the following in Terminal:
