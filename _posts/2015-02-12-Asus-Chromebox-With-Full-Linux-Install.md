@@ -4,9 +4,6 @@ title: Asus Chromebox with Full Linux Install
 published: true
 excerpt: "Walkthrough on installing Ubuntu Linux (14.04) on an Asus Chromebox. This will be used as an HTPC with Plex Home Theater."
 comments: true
-image: 
-    feature: asus-chromebox-walkthrough.jpg
-    credit: An Asus Chromebox M004U with an Intel Celeron 2955U, 6GB of RAM, and 16GB SSD. 
 ---
 
 {% include _toc.html %}
