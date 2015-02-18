@@ -52,6 +52,7 @@ I am assuming you already have Plex Media Server already working with all your m
 **NOTE:** Carefully follow these instructions. Take your time at this step. STOP at "1.3 Perform Factory Reset." You do not 
 need to follow that step.
 {: .notice}
+
 3. You now want to download and run the EZ setup script, provided by Matt DeVillier. You can follow the [steps from the Kodi forums](http://forum.kodi.tv/showthread.php?tid=194362), but I will break it down here. 
 
 **NOTE:** Most of these instructions are directly from the link above, but I want to separate those instructions to make it 
