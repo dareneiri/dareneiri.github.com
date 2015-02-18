@@ -22,7 +22,6 @@ There are several HTPCs available, but I wasn't looking to spend more than $150,
 The [Asus Chromebox](http://www.asus.com/us/ASUS_Chromebox/) fits the bill perfectly. There are resources available to set up standalone Linux easily, it doesn't consume too much power, but it is powerful enough to transcode media, and it's pretty inexpensive. The Asus Chromebox was released in March 2014. Ars Technica gave it [unfavorable reviews as an HTPC setup](http://arstechnica.com/gadgets/2014/03/review-asus-brings-chrome-os-to-mini-pcs-in-a-low-power-inexpensive-package/2/), but much has changed in ease of installing a standalone linux OS. I found it on eBay for ~$110, brand new. Currently, Amazon sells it for $159:
     <figure>
         <img src="{{ site.url }}/images/chromeboxpricewatch.png" alt="screenshot of chromebox camelcamelcamel">
-        <figcaption>Check out the historical price of the Asus Chromebox.</figcaption>
     </figure>
 
 
@@ -49,8 +48,8 @@ I am assuming you already have Plex Media Server already working with all your m
         </figure>
     3. If you like, you can install additional RAM at this point. Do make sure your RAM is PC3L, and not PC3. Using the latter will result in issues upon bootup.
 2. Follow these steps to [get into developer mode](http://kodi.wiki/view/Chromebox#Put_in_Developer_Mode). 
-    **NOTE:** Carefully follow these instructions. Take your time at this step. STOP at "1.3 Perform Factory Reset." You do not need to follow that step.
-    {: .notice}
+        **NOTE:** Carefully follow these instructions. Take your time at this step. STOP at "1.3 Perform Factory Reset." You do not need to follow that step.
+        {: .notice}
 
 3. You now want to download and run the EZ setup script, provided by Matt DeVillier. You can follow the [steps from the Kodi forums](http://forum.kodi.tv/showthread.php?tid=194362), but I will break it down here. 
         **NOTE:** Most of these instructions are directly from the link above, but I want to separate those instructions to make it easier see what needs to be done. 
