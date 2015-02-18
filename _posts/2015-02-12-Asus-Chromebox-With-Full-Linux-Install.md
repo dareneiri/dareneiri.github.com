@@ -26,13 +26,13 @@ The [Asus Chromebox](http://www.asus.com/us/ASUS_Chromebox/) fits the bill perfe
 
 
 ## Requirements
-If you aim to accomplish the same setup for your Chromebox as I have, follow the guide below. Again, this is for a standalone Linux Ubuntu boot on the Asus Chromebox. **This process will remove ChromeOS** and does not have the option to dual-boot.Once you have finished this process, you will have accomplished the following: 
+If you aim to accomplish the same setup for your Chromebox as I have, follow the guide below. Again, this is for a standalone Linux Ubuntu boot on the Asus Chromebox. **This process will remove ChromeOS** and does not have the option to dual-boot. Once you have finished this process, you will have accomplished the following: 
 
 1. An Asus Chromebox with Ubuntu Linux 14.04, as a standalone boot
 2. Plex Home Theater installed on the Chromebox, accessing Plex Media Server on the Synology NAS
 3. VNC server up and running, to remotely access the system
 
-I am assuming you already have Plex Media Server already working with all your media. I am also assuming that you are willing to risk bricking your Chromebox; definitely proceed at your own risk. With that said, serveral people have reported success with this process. 
+I am assuming you already have Plex Media Server working with all your media. I am also assuming that you are willing to risk bricking your Chromebox; definitely proceed at your own risk. With that said, serveral people have reported success with this process. 
 
 ## Step-by-Step Walkthrough
 
@@ -78,13 +78,11 @@ I am assuming you already have Plex Media Server already working with all your m
 3. Installing Plex Home Theater
     1. Add the plexappp repository by following [this documentation](https://launchpad.net/~plexapp/+archive/ubuntu/plexht). If it's confusing, you should do the following commands in Terminal:
         <pre>sudo add-apt-repository ppa:plexapp/plexht </pre>
-    2. Install cmake:
-        <pre>sudo apt-get install cmake </pre>
-    3. Update the respositories:
+    2. Update the respositories:
         <pre>sudo apt-get update</pre>
-    4. Install Plex Home Theater:
+    3. Install Plex Home Theater:
         <pre>sudo apt-get install plexhometheater</pre>
-    5. Now all you need to do is configure PHT to talk to your PMS. I did this by setting my server settings manually in Preferences.
+    4. Now all you need to do is configure PHT to talk to your PMS. I did this by configuring my server settings manually in Preferences.
 4. Configuring VNC - Remote Desktop
     1. Ubuntu comes with Desktop Sharing by default. This sets up a VNC server. 
     2. Type "Desktop Sharing" in the dash (the launcher/finder)
@@ -95,13 +93,13 @@ I am assuming you already have Plex Media Server already working with all your m
     </figure>  
     4. You then need to disable encryption, since having this enabled seems to be an issue. 
         <pre>gsettings set org.gnome.Vino require-encryption false</pre>
-    5. This change may not stay after reboot, so you can edit a file by typing the following in Terminal:
+    5. This change may not stay after reboot, so you can edit some settings by typing the following in Terminal:
         <pre>sudo apt-get install dconf-tools</pre>
     6. Search for dconf Editor in dash, then navigate to org > gnome > desktop > remote-access
-    7. If you will be using remote desktop within your local network (at home) then uncheck "enabled" 
-
+    7. Some have reported unchecking "enabled" but others haven't had much success and [resorted to finding other solutions](http://discourse.ubuntu.com/t/remote-desktop-sharing-in-ubuntu-14-04/1640/4). Defintely review those options if you're haivng problems accessing VNC after rebooting. '
+    
 ### Summary
-What you've accomplished, if my documentation is thorough enough (if not please let me know) is setting up the Asus Chromebox as an HTPC, with Ubuntu 14.04 installed, along with Plex Home Theater and local VNC access. If you would like to have access to your Chromebox via remote desktop outside your network (e.g., at work or another house) then I *strongly* recommend setting up SSH tunneling for VNC. '
+What you've accomplished, if my documentation is thorough enough (if not please let me know) is setting up the Asus Chromebox as an HTPC, with Ubuntu 14.04 installed, along with Plex Home Theater and local VNC access. If you would like to have access to your Chromebox via remote desktop outside your network (e.g., at work or another house) then I *strongly* recommend setting up SSH tunneling for VNC; passwords are not encrypted over the network. 
     
  
 
