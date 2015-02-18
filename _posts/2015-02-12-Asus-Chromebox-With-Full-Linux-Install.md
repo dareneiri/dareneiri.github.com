@@ -39,12 +39,14 @@ I am assuming you already have Plex Media Server already working with all your m
 ### Chromebox Setup and Ubuntu Installation
 1. With your Chromebox unplugged, prepare your device for the linux installation by disabling the [firmware write protection](http://kodi.wiki/view/Chromebox#Disable_Firmware_Write_Protect). 
     1. To open the Chromebox, you need to remove the four rubber footpads. I found it easiest to use a small flathead and lift up from the inner-rounded corner of the footpad
-        <figure><img src="{{ site.url }}/images/chromebox1.jpg" alt="chromebox footpad removal">
+        <figure>
+            <img src="{{ site.url }}/images/chromebox1.jpg" alt="chromebox footpad removal">
             <figcaption>Life the flathead under the rubber foot, from the direction of the inner-rounded corner.</figcaption>
-            </figure>
+        </figure>
     2. In case of any doubt from the website link above, here is the screw that needs to be permanently removed for this installation to work.
         <figure>
-            <img src="{{ site.url }}/images/chromebox2.jpg" alt="screw write protect"></figure>
+            <img src="{{ site.url }}/images/chromebox2.jpg" alt="screw write protect">
+        </figure>
     3. If you like, you can install additional RAM at this point. Do make sure your RAM is PC3L, and not PC3. Using the latter will result in issues upon bootup.
 2. Follow these steps to [get into developer mode](http://kodi.wiki/view/Chromebox#Put_in_Developer_Mode). 
     **NOTE:** Carefully follow these instructions. Take your time at this step. STOP at "1.3 Perform Factory Reset." You do not need to follow that step.
