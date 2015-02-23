@@ -34,6 +34,7 @@ To fix this and have the Grub bootloader list your Windows OS, you need to edit 
   /dev/sda7       361433088   612589567   125578240   8e  Linux LVM
   </pre>
   In this example, /dev/sda1 is the recovery partition, and /dev/sda2 is the Windows OS partition. Since partition indexes start at zero, the Windows OS partition will be `hd0,1` (a = 0, 2 = 1; or first disk, second partition) when we edit the Grub file. Make note of this.
+
 3. Open a terminal and navigate to `/etc/grub.d/`:
   <pre>
   cd  /etc/grub.d/
