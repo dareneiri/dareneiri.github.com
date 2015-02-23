@@ -62,9 +62,9 @@ To fix this and have the Grub bootloader list your Windows OS, you need to edit 
     grub2-mkconfig --output=/boot/grub2/grub.cfg
     </pre>
   + Once you reboot, you should see the option of booting into Windows 7. If a default boot entry into Windows (or something else) is requested, then you need to edit the `GRUB_DEFAULT` in `/etc/default/grub:`
-    <pre>
-    GRUB_DEFAULT="Windows 7"
-    </pre>
+      <pre>
+      GRUB_DEFAULT="Windows 7"
+      </pre>
 
     
  
