@@ -51,7 +51,7 @@ To fix this and have the Grub bootloader list your Windows OS, you need to edit 
     # menu entries you want to add after this comment.  Be careful not to change
     # the 'exec tail' line above.
     </pre>
-6. Below the #, type: 
+6. Below the last #, type on a new line: 
     <pre>
     menuentry "Windows 7" {
             set root=(hd0,1)
