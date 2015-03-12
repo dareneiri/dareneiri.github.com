@@ -18,6 +18,7 @@ I'm not sure what caused the 3.13.0-46-generic to no longer work, only that in t
 <pre>Your BIOS is broken; DMAR reported at address fed10000 returns all ones!</pre>
 
 Apparently this issue is quite common:
+
 - [Link to askubuntu.com](http://askubuntu.com/questions/432007/usb-keyboard-mouse-not-recognized-after-update-to-13-10-from-12-10)
 - [Link to ubuntuforums.com](http://ubuntuforums.org/showthread.php?t=2114055&page=2)
 - [Link to askubuntu.com](http://askubuntu.com/questions/413338/why-is-my-syslog-telling-me-that-my-bios-is-broken)
@@ -27,6 +28,7 @@ Apparently this issue is quite common:
 I obviously spent a lot of time reviewing possible solutions.
 
 One of the solutions was to modify the `/etc/defaults/grub` file and UEFI:
+
 - <pre>sudo gedit /etc/default/grub</pre>
 - Change `GRUB_CMDLINE_LINUX="linux"` to `GRUB_CMDLINE_LINUX="iommu=soft"` near the top
 - <pre>sudo update-grub</pre>
