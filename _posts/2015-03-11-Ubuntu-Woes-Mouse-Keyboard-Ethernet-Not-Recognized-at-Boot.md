@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Ubuntu Woes Mouse Keyboard and Ethernet Not Recognized At Boot
+title: Ubuntu Woes&#58; Mouse, Keyboard, and Ethernet Not Recognized At Boot
 published: true
 excerpt: "You restarted Ubuntu and find that your mouse, keyboard, and/or Ethernet are no longer recognized. How do you fix this?"
 comments: true
