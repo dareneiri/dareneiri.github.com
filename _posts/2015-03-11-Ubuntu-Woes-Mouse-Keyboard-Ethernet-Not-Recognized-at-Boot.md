@@ -18,10 +18,10 @@ I'm not sure what caused the 3.13.0-46-generic to no longer work, only that in t
 <pre>Your BIOS is broken; DMAR reported at address fed10000 returns all ones!</pre>
 
 Apparently this issue is quite common:
-   - [http://askubuntu.com/questions/432007/usb-keyboard-mouse-not-recognized-after-update-to-13-10-from-12-10](http://askubuntu.com/questions/432007/usb-keyboard-mouse-not-recognized-after-update-to-13-10-from-12-10)
-   - [http://ubuntuforums.org/showthread.php?t=2114055&page=2](http://ubuntuforums.org/showthread.php?t=2114055&page=2)
-   - [http://askubuntu.com/questions/413338/why-is-my-syslog-telling-me-that-my-bios-is-broken](http://askubuntu.com/questions/413338/why-is-my-syslog-telling-me-that-my-bios-is-broken)
-   - [http://hardforum.com/showthread.php?t=1807755](http://hardforum.com/showthread.php?t=1807755)
+  - [http://askubuntu.com/questions/432007/usb-keyboard-mouse-not-recognized-after-update-to-13-10-from-12-10](http://askubuntu.com/questions/432007/usb-keyboard-mouse-not-recognized-after-update-to-13-10-from-12-10)
+  - [http://ubuntuforums.org/showthread.php?t=2114055&page=2](http://ubuntuforums.org/showthread.php?t=2114055&page=2)
+  - [http://askubuntu.com/questions/413338/why-is-my-syslog-telling-me-that-my-bios-is-broken](http://askubuntu.com/questions/413338/why-is-my-syslog-telling-me-that-my-bios-is-broken)
+  - [http://hardforum.com/showthread.php?t=1807755](http://hardforum.com/showthread.php?t=1807755)
 
 
 I obviously spent a lot of time reviewing possible solutions.
