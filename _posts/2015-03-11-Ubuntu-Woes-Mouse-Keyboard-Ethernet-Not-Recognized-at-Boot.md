@@ -18,24 +18,25 @@ I'm not sure what caused the 3.13.0-46-generic to no longer work, only that in t
 <pre>Your BIOS is broken; DMAR reported at address fed10000 returns all ones!</pre>
 
 Apparently this issue is quite common:
-   * [http://askubuntu.com/questions/432007/usb-keyboard-mouse-not-recognized-after-update-to-13-10-from-12-10](http://askubuntu.com/questions/432007/usb-keyboard-mouse-not-recognized-after-update-to-13-10-from-12-10)
-   * [http://ubuntuforums.org/showthread.php?t=2114055&page=2](http://ubuntuforums.org/showthread.php?t=2114055&page=2)
-   * [http://askubuntu.com/questions/413338/why-is-my-syslog-telling-me-that-my-bios-is-broken](http://askubuntu.com/questions/413338/why-is-my-syslog-telling-me-that-my-bios-is-broken)
-   * [http://hardforum.com/showthread.php?t=1807755](http://hardforum.com/showthread.php?t=1807755)
+   *  [http://askubuntu.com/questions/432007/usb-keyboard-mouse-not-recognized-after-update-to-13-10-from-12-10](http://askubuntu.com/questions/432007/usb-keyboard-mouse-not-recognized-after-update-to-13-10-from-12-10)
+   *  [http://ubuntuforums.org/showthread.php?t=2114055&page=2](http://ubuntuforums.org/showthread.php?t=2114055&page=2)
+   *  [http://askubuntu.com/questions/413338/why-is-my-syslog-telling-me-that-my-bios-is-broken](http://askubuntu.com/questions/413338/why-is-my-syslog-telling-me-that-my-bios-is-broken)
+   *  [http://hardforum.com/showthread.php?t=1807755](http://hardforum.com/showthread.php?t=1807755)
+
 
 I obviously spent a lot of time reviewing possible solutions.
 
 One of the solutions was to modify the `/etc/defaults/grub` file and UEFI:
-   *<pre>sudo gedit /etc/default/grub</pre>
-   *Change `GRUB_CMDLINE_LINUX="linux"` to `GRUB_CMDLINE_LINUX="iommu=soft"` near the top
-   *<pre>sudo update-grub</pre>
-   *Then find some setting in your UEFI regarding iommu and disable it.
+   * <pre>sudo gedit /etc/default/grub</pre>
+   * Change `GRUB_CMDLINE_LINUX="linux"` to `GRUB_CMDLINE_LINUX="iommu=soft"` near the top
+   * <pre>sudo update-grub</pre>
+   * Then find some setting in your UEFI regarding iommu and disable it.
 
 Unfortunately I did not have any setting regarding the iommu and adding `iommu=soft` into my grub file did not do anything regarding the USB/Ethernet issue.
 
 I attempted to update the kernel so that a new one would be used by default -- that didn't work either. Evidently the /boot partition size was only 56MB or so. Changing the partition size isn't easy, from what I found. There wasn't enough space to install the package after download the files I needed. This is also not unheard of:
 
-   * [http://askubuntu.com/questions/298487/not-enough-free-disk-space-when-upgrading](http://askubuntu.com/questions/298487/not-enough-free-disk-space-when-upgrading)
+   *  [http://askubuntu.com/questions/298487/not-enough-free-disk-space-when-upgrading](http://askubuntu.com/questions/298487/not-enough-free-disk-space-when-upgrading)
 
 So what am I do to? There was one only kernel that was used previously, so two total kernels existed. I simply deleted the newest one. I already knew what kernel I wanted to remove, 3.13.0-46-generic, so I did the following:  
    <pre>sudo apt-get purge linux-image-3.13.0-46*.</pre>
