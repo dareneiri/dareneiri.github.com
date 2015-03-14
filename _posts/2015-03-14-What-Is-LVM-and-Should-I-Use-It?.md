@@ -8,44 +8,45 @@ comments: true
 {% include _toc.html %}
 
 #Introduction
-I'm quite used to navigating and futzing around Linux OS, primarily because of my exposure with Mac OS X and the similarities between Unix and Linux on file system navigation and terminal usage. Recently, I have been getting my hands quite dirty, and giving myself many headaches while I troubleshoot problems I come across.
+I'm quite used to navigating and futzing around Linux OS, primarily because of my exposure with Mac OS X and the similarities between Unix and Linux on file system navigation and terminal usage. However, I have recently been getting my hands quite dirty, and giving myself many headaches while I troubleshoot problems I come across.
 
-There have been a few things that I kept coming across as I read more about Linux troubleshooting and the OS in general, one of them is LVM, or Logical Volume Management. I have also come across this when working on Macs, since you can come across logical volume groups. Not being very active in the sysadmin world, I wasn't really aware of this change in Mac OS X. And logical volume groups were introduced with OS X Lion in 2011!
+There have been a few things that I kept coming across as I read more about Linux troubleshooting and the OS in general, one of them is LVM, or Logical Volume Management. I have also come across this when working on Macs, since you can come across logical volume groups. Not being very active in the sysadmin world for the past few years, I wasn't really aware of this change in Mac OS X. And logical volume groups were introduced with OS X Lion in 2011!
 
 But logical volume groups in Mac OS X and logical volume management in Linux do not have the same features. [This wikipedia article on Core Storage](http://en.wikipedia.org/wiki/Core_Storage), the volume manager for Mac OS X, compares it to lacking Linux LVM's feature of easily expanding storage -- its raison d'être.
 
-Don't let this confuse you, but know that there is a difference with the volume management in OS X is different than in Linux. However, *both* are methods of *virtually managing volumes.*
+Don't let this confuse you, but know that there is a difference with the volume management in OS X and it is different than in Linux. However, *both* are methods of **virtually managing volumes.**
 
 #Definition of LVM
-Before we get to what an LVM is, let's define what a filesystem is. Michael Jang (author of the RHCSA/RHCE study guide book) considers the multiple meanings of a "file system":
+Before we get to what an LVM is, let's define what a file system is. Michael Jang (author of the RHCSA/RHCE study guide book) considers the multiple meanings of a "file system":
 
 1. It can be an individual volume, i.e, /dev/sda
 2. A format, like ext4 or HFS+
-3. Or even refers to the Basic Filesystem Hierarchy Standard (FHS) directories, such as /boot, /home, or /media
+3. Or even refers to the Basic File System Hierarchy Standard (FHS) directories, such as /boot, /home, or /media
 
 But let's not think of LVMs as file systems, even though that is the #1 autocompletion result in Google:
 <figure>
     <img src="{{ site.url }}/images/autocompletion.png" alt="google autocomplete">
 </figure>
 
-Think of LVMs as a disk storage management strategy. This was my initial mistake, and it's common to think of ["formatting an LVM partition"](http://unix.stackexchange.com/questions/64963/how-to-format-an-lvm-partition), just like we would when we format an ext4 partition (i.e, a filesystem).
+Think of LVMs as a **disk storage management strategy**. This was my initial mistake, and it's common to think of ["formatting an LVM partition"](http://unix.stackexchange.com/questions/64963/how-to-format-an-lvm-partition), just like we would when we format an ext4 partition (i.e, a file system).
 
 
 #The Benefits of LVM
-I like to emphasize that LVM is a disk storage management strategy because as a sysadmin, you have to wonder if it benefits setting your server up as an LVM or not. There are benefits to LVM, as opposed to strictly partitioning your volume as an ext4/HFS/NTFS/etc.
+I'd like to emphasize that LVM is a disk storage management strategy because as a sysadmin, you have to wonder if it benefits setting your server up as an LVM or not. There are benefits to LVM, as opposed to strictly partitioning your volume as an ext4/HFS/NTFS/etc. You also need to consider *how* you set up your LVM.
 
 ###Storage Flexibility
 The most commonly cited reason for using LVMs to manage your storage is that provides flexibility in expanding the storage space of a specific directory, or more specifically, a FHS directory (e.g., /home, /var). Let's use an fast-expanding business as an example. Say a company hosts a server for it's employees specifically used to store home directories. You allocate 1TB of space for your 300 or so employees. This might work initially, but then you need to think about the business expanding in size and the need to create more physical space for the /home directory. You also need to think about the increasing number of space existing users are using.
 
-Under this scenario, without LVM, you would not be able to easily expand your 1TB of space for /home. You could pop in a new hard drive, but then that would create a mess managing a separate set of users on /home2, for example. The best part is that this would not involve downtime or a restart of your host. Pretty darn important in a production environment!
+Under this scenario, without LVM, you would not be able to easily expand your 1TB of space for /home. You could pop in a new hard drive, but then that would create a mess managing a separate set of users on /home2, for example.
 
 With LVM, you can *virtually expand* /home by popping in a new 4TB drive, and increase the initial 1TB dedicated to /home. The command would like similar to this;
 <pre> lvextend -L+4000GB /dev/vg/home</pre>
+The best part is that this would not involve downtime or a restart of your host. Pretty darn important in a production environment!
 
-Let's drive the point that LVM is not strictly a filesystem format by noticing that this 4TB partition you popped in is formatted as ext4. In this sense, the filesystem of this 4TB drive is ext4, but the partition "type" is LVM. Actually, this is how Ubuntu references LVMs.
+Let's drive the point that LVM is not strictly a file system format by noticing that this 4TB partition you popped in is formatted as ext4. In this sense, the file system of this 4TB drive is ext4, but the partition "type" is LVM. Actually, this is how Ubuntu references LVMs.
 
 <figure>
-    <img src="{{ site.url }}/images/filesystemtype.png" alt="fstype">
+    <img src="{{ site.url }}/images/file systemtype.png" alt="fstype">
 </figure>
 
 I really enjoyed this explanation of the [benefits of LVMs through storage flexibility from tldp](http://www.tldp.org/HOWTO/LVM-HOWTO/benefitsoflvmsmall.html), particularly because it references having extra storage space after having moved his music from a 6GB partition to DVDs!
@@ -66,12 +67,12 @@ There are some other benefits to LVMs, including encryption and the ability to u
 - [http://askubuntu.com/questions/3596/what-is-lvm-and-what-is-it-used-for](http://askubuntu.com/questions/3596/what-is-lvm-and-what-is-it-used-for)
 
 #Disadvantages of LVM(?)
-I haven't found a consensus on whether there are downsides to using LVM in your environment, and I suppose this comes down to what you're specifically using it for, and how you're setting it up. I think partly this comes from what kernel of linux people are using. There was a bug in 2.6.31 where write barriers were not supported (we're like... what 3.18.0-*? ). This meant that it wasn't guaranteed that filesystem corruption could be avoided/resolved, as ext3/4 offers through it's journaling features:
+I haven't found a consensus on whether there are downsides to using LVM in your environment, and I suppose this comes down to what you're specifically using it for, and how you're setting it up. I think partly this comes from what kernel of linux people are using. For example, there was a bug in 2.6.31 where write barriers were not supported (we're like... what 3.18.0-*? ). This meant that it wasn't guaranteed that file system corruption could be avoided/resolved, as ext3/4 offers through its journaling features:
 
 - [https://bugzilla.kernel.org/show_bug.cgi?id=9554](https://bugzilla.kernel.org/show_bug.cgi?id=9554)
 - [http://lwn.net/Articles/283161/](http://lwn.net/Articles/283161/)
 
-Another common issue I have come across while reading about the disadvantages of LVM is the [claim of performance hits when using a LVM](http://www.linuxquestions.org/questions/linux-server-73/lvm-vs-no-lvm-811853/). But these claims of performance hits [seem to be negligible](http://unix.stackexchange.com/questions/7122/does-lvm-impact-performance)
+Another common issue I have come across while reading about the disadvantages of LVM is the [claim of performance hits when using a LVM](http://www.linuxquestions.org/questions/linux-server-73/lvm-vs-no-lvm-811853/). But these claims of performance hits [seem to be negligible](http://unix.stackexchange.com/questions/7122/does-lvm-impact-performance).
 
 
 #Final Thoughts
