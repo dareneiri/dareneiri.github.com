@@ -1,6 +1,6 @@
 ---
 layout: post
-title: What IS LVM and Should I Use It?
+title: What Is LVM and Should I Use It?
 published: true
 excerpt: "You heard of using LVM as a good strategy for storage management, but what is it really, and should you use it?"
 comments: true
