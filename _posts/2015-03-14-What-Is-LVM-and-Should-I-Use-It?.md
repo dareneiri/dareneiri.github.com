@@ -5,6 +5,7 @@ published: true
 excerpt: "You heard of using LVM as a good strategy for storage management, but what is it really, and should you use it?"
 comments: true
 ---
+{% include _toc.html %}
 
 ##Introduction
 I'm quite used to navigating and futzing around Linux OS, primarily because of my exposure with Mac OS X and the similarities between Unix and Linux on file system navigation and terminal usage. Recently, I have been getting my hands quite dirty, and giving myself many headaches while I troubleshoot problems I come across.
@@ -17,6 +18,7 @@ Don't let this confuse you, but know that there is a difference with the volume 
 
 #Definition of LVM
 Before we get to what an LVM is, let's define what a filesystem is. Michael Jang (author of the RHCSA/RHCE study guide book) considers the multiple meanings of a "file system":
+
 # It can be an individual volume, i.e, /dev/sda
 # A format, like ext4 or HFS+
 # Or even refers to the Basic Filesystem Hierarchy Standard (FHS) directories, such as /boot, /home, or /media
@@ -57,6 +59,7 @@ When thinking about deploying virtual servers, the virtual hosts that are runnin
 
 ###Sources
 There are some other benefits to LVMs, including encryption and the ability to use RAID. Here are some resources you might find useful for additional discussion:
+
 - [http://www.opensourceforu.com/2014/03/manage-storage-like-pro-lvm/](http://www.opensourceforu.com/2014/03/manage-storage-like-pro-lvm/)
 - [http://xmodulo.com/use-lvm-linux.html](http://xmodulo.com/use-lvm-linux.html)
 - [http://www.tldp.org/HOWTO/LVM-HOWTO/whatisvolman.html](http://www.tldp.org/HOWTO/LVM-HOWTO/whatisvolman.html)
@@ -64,6 +67,7 @@ There are some other benefits to LVMs, including encryption and the ability to u
 
 #Disadvantages of LVM(?)
 I haven't found a consensus on whether there are downsides to using LVM in your environment, and I suppose this comes down to what you're specifically using it for, and how you're setting it up. I think partly this comes from what kernel of linux people are using. There was a bug in 2.6.31 where write barriers were not supported (we're like... what 3.18.0-*? ). This meant that it wasn't guaranteed that filesystem corruption could be avoided/resolved, as ext3/4 offers through it's journaling features:
+
 - [https://bugzilla.kernel.org/show_bug.cgi?id=9554](https://bugzilla.kernel.org/show_bug.cgi?id=9554)
 - [http://lwn.net/Articles/283161/](http://lwn.net/Articles/283161/)
 
