@@ -58,6 +58,10 @@ When thinking about deploying virtual servers, the virtual hosts that are runnin
     <img src="{{ site.url }}/images/snapshots.png" alt="fstype">
 </figure>
 
+Speaking of VMs, using LVM on a VM has its own benefits. Once you extend the hard drive size in the VM host, you still need to extend it in Linux. Not using LVM seems to make extending your partition a bit more involved than it needs to be, [http://askubuntu.com/questions/294889/how-to-expand-the-ext4-primary-partition-size-in-a-vmware-player-virtual-disk](including a trip to BIOS, deleting partitions) (and possibly accidentally deleting your own!), or [booting from the live cd](http://askubuntu.com/questions/429576/increase-ubuntu-partition-size-under-virtual-machine) which isn't always convenient.
+
+With LVM, extending your partition in Linux is pretty straight forward, especially if you follow a [walkthrough like this](https://www.justinrummel.com/resizing-a-vmware-fusion-ubuntu-server-logical-vhd-via-guided-partitioning/). It took me less than ten minutes and no restarts were required. Magic! 
+
 ###Sources
 There are some other benefits to LVMs, including encryption and the ability to use RAID. Here are some resources you might find useful for additional discussion:
 
