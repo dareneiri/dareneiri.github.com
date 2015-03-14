@@ -7,7 +7,7 @@ comments: true
 ---
 {% include _toc.html %}
 
-##Introduction
+#Introduction
 I'm quite used to navigating and futzing around Linux OS, primarily because of my exposure with Mac OS X and the similarities between Unix and Linux on file system navigation and terminal usage. Recently, I have been getting my hands quite dirty, and giving myself many headaches while I troubleshoot problems I come across.
 
 There have been a few things that I kept coming across as I read more about Linux troubleshooting and the OS in general, one of them is LVM, or Logical Volume Management. I have also come across this when working on Macs, since you can come across logical volume groups. Not being very active in the sysadmin world, I wasn't really aware of this change in Mac OS X. And logical volume groups were introduced with OS X Lion in 2011!
@@ -19,9 +19,9 @@ Don't let this confuse you, but know that there is a difference with the volume 
 #Definition of LVM
 Before we get to what an LVM is, let's define what a filesystem is. Michael Jang (author of the RHCSA/RHCE study guide book) considers the multiple meanings of a "file system":
 
-# It can be an individual volume, i.e, /dev/sda
-# A format, like ext4 or HFS+
-# Or even refers to the Basic Filesystem Hierarchy Standard (FHS) directories, such as /boot, /home, or /media
+1 It can be an individual volume, i.e, /dev/sda
+1 A format, like ext4 or HFS+
+1 Or even refers to the Basic Filesystem Hierarchy Standard (FHS) directories, such as /boot, /home, or /media
 
 But let's not think of LVMs as file systems, even though that is the #1 autocompletion result in Google:
 <figure>
