@@ -19,9 +19,9 @@ Don't let this confuse you, but know that there is a difference with the volume 
 #Definition of LVM
 Before we get to what an LVM is, let's define what a filesystem is. Michael Jang (author of the RHCSA/RHCE study guide book) considers the multiple meanings of a "file system":
 
-1 It can be an individual volume, i.e, /dev/sda
-1 A format, like ext4 or HFS+
-1 Or even refers to the Basic Filesystem Hierarchy Standard (FHS) directories, such as /boot, /home, or /media
+1. It can be an individual volume, i.e, /dev/sda
+2. A format, like ext4 or HFS+
+3. Or even refers to the Basic Filesystem Hierarchy Standard (FHS) directories, such as /boot, /home, or /media
 
 But let's not think of LVMs as file systems, even though that is the #1 autocompletion result in Google:
 <figure>
