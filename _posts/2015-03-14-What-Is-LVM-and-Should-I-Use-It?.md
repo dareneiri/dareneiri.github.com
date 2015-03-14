@@ -46,7 +46,7 @@ The best part is that this would not involve downtime or a restart of your host.
 Let's drive the point that LVM is not strictly a file system format by noticing that this 4TB partition you popped in is formatted as ext4. In this sense, the file system of this 4TB drive is ext4, but the partition "type" is LVM. Actually, this is how Ubuntu references LVMs.
 
 <figure>
-    <img src="{{ site.url }}/images/file systemtype.png" alt="fstype">
+    <img src="{{ site.url }}/images/filesystemtype.png" alt="fstype">
 </figure>
 
 I really enjoyed this explanation of the [benefits of LVMs through storage flexibility from tldp](http://www.tldp.org/HOWTO/LVM-HOWTO/benefitsoflvmsmall.html), particularly because it references having extra storage space after having moved his music from a 6GB partition to DVDs!
