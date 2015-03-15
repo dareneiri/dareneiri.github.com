@@ -12,13 +12,15 @@ image:
 
 Hey! Thanks for stopping by. If you are looking for information about my academic research, go to [dareneiri.com](http://dareneiri.com)
 
-I am a long-time IT/help desk employee, first at UC San Diego's Academic Computing & Media Services, and now with Wolfram Research. For some of that time, I was involved with scientific research on honey bees (my BS and MS degrees are in biology). Pursuing my interests, I started a PhD program at University of Texas, Austin. That  lasted a year, simply because it no longer aligned with my [long-term personal goals](http://dareneiri.com/2014/10/30/why-i-decided-to-leave-academia/). 
+I am a long-time IT help desk/systems technician, first at UC San Diego's Academic Computing & Media Services, and now with Wolfram Research. For some of that time, I was simultaneously involved with scientific research on honey bees (my BS and MS degrees are in biology). Pursuing my academic interests, I started a PhD program at the University of Texas, Austin. That  lasted a year, simply because it no longer aligned with my [long-term personal goals](http://dareneiri.com/2014/10/30/why-i-decided-to-leave-academia/).
 
-Now, I'm crossing my fingers and getting back to my childhood roots -- fixing computers and exploring latest developments in technology -- but I would not call myself a programmer. 
 
-My goals are to work my way through code, get a bit more familar with scripting, and find something I am passionate about. I am here to learn. That is what you will find here. 
+Now, I want to get back to my childhood roots: exploring the latest developments in technology, more recently as it applies to cloud computing infrastructure and emerging solutions in systems administration.
 
- 
+
+My goal here is to write about these topics, teach myself a few things, and improve my knowledge and technical skills in the process. 
+
+
 
 ## Setup
 
