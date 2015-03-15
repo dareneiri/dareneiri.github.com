@@ -1,6 +1,6 @@
 ---
 layout: page
-title: tags
+title: Tags
 comments: false
 image:
   feature: sample-image-2.jpg
