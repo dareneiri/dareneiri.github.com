@@ -34,7 +34,11 @@ I titled this website "A Stack of Notes" since this will serve as a repository o
 
 Use the links on the left to contact me, otherwise:
 
+
 <a href="https://twitter.com/dareneiri" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @dareneiri</a>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+
+
 
 Thanks for reading!
