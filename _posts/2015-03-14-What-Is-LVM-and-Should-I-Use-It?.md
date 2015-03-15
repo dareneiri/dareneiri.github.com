@@ -1,7 +1,7 @@
 ---
 layout: post
 title: What Is LVM and Should I Use It?
-tags: [ubunut, linux]
+tags: [ubuntu, linux]
 published: true
 excerpt: "You heard of using LVM as a good strategy for storage management, but what is it really, and should you use it?"
 comments: true
