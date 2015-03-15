@@ -1,7 +1,10 @@
 ---
 layout: page
-title: Tags
-description: "An archive of posts sorted by tag."
+title: tags
+comments: false
+image:
+  feature: sample-image-2.jpg
+  credit: Eiri
 ---
 
 {% capture site_tags %}{% for tag in site.tags %}{{ tag | first }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
