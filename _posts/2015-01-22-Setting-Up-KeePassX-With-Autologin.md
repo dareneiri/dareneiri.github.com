@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Setting Up KeePassX with Browser Support
+tags: [mac, software]
 published: true
 excerpt: "How to compile the KeePassX build with KessPassHTTP support"
 comments: true
@@ -25,7 +26,7 @@ _This post is intended for Mac users setting up KeePassX and getting autologin +
 1. Once you download the source, make sure you know where it saved (i.e., your Downloads folder). Unzip it.
 2. Then you need to open Terminal (Applications > Utilities > Terminal.app) and navigate to that folder. In Terminal, type:
 	<pre>cd Downloads/keepassx-master</pre>
-3. Then run: 
+3. Then run:
 	<pre>brew install qt cmake libgcrypt zlib libmicrohttpd</pre>
     <pre>cmake -DCMAKE_INSTALL_PREFIX=$HOME/local/apps/keepassxhttp -DCMAKE_VERBOSE_MAKEFILE=ON</pre>
     <pre>make</pre>
@@ -35,9 +36,9 @@ _This post is intended for Mac users setting up KeePassX and getting autologin +
 
 ##Setting up the ChromeIPass Browser Extension
 1. Once you open the KeePassX application, ChromeIPass may need to establish a connection to the application.
-	You will get notified by the extension to have KeePassHTTP connected. All you need to do is launch KeePassX, and click on the extension icon to establish the connection. 
+	You will get notified by the extension to have KeePassHTTP connected. All you need to do is launch KeePassX, and click on the extension icon to establish the connection.
 
-**Keep in mind** that you will need to have KeePassX remained open so that ChomeIPass can recognize that Keepasshttp is running. 
+**Keep in mind** that you will need to have KeePassX remained open so that ChomeIPass can recognize that Keepasshttp is running.
 {: .notice}
 
 
@@ -46,5 +47,3 @@ _This post is intended for Mac users setting up KeePassX and getting autologin +
 - [Forked repo of KeePassX with ChromeIPass support](https://github.com/jdachtera/keepassx)
 - [Master repo of KeePassX](https://github.com/keepassx/keepassx)
 - [KeePassX feature requeset tracker](https://www.keepassx.org/dev/issues/91#change-603) with details on compiling KeePassX from source
-
-

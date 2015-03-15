@@ -1,6 +1,7 @@
 ---
 layout: post
-title: Creating A New User in Terminal (Mac OS X) 
+title: Creating A New User in Terminal (Mac OS X)
+tags: [mac]
 published: true
 excerpt: "Quick notes on Terminal commands used to create a new user account in Mac OS X"
 comments: true
@@ -21,11 +22,11 @@ PrimaryGroupID of 80 creates an Admin user. Change to PrimaryGroupID of 20 to cr
 
 
 <pre>dscl . -create /Users/new_user NFSHomeDirectory /Users/new_user</pre>
-    
+
 <pre>dscl . -passwd /Users/new_user changeme</pre>
-    
+
 <pre>dscl . append /Groups/admin GroupMembership new_user</pre>
-    
+
 You may need to create the home directory as well:
 
 <pre>createhomedir -u new_user</pre>

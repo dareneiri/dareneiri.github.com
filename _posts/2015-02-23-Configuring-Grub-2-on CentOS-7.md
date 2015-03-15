@@ -1,13 +1,14 @@
 ---
 layout: post
 title: Configuring Grub 2 on CentOS 7 to Dual Boot with Windows 7
+tags: [windows, linux, troubleshooting]
 published: true
 excerpt: "You installed CentOS 7, and now you can't boot into Windows. If you want to dual boot CentOS 7 with Windows 7, you need to configure the Grub files. That is, unless you're happy to be stuck in Linux Land!"
 comments: true
 ---
 
 _This post assumes that Windows was installed first, and then CentOS was installed second._
- 
+
 Once you install CentOS 7 alongside your Windows OS, you may find that you cannot boot into Windows. The Grub bootloader may only show your Linux OS as your only options to boot from.
     <figure>
         <img src="{{ site.url }}/images/centos7_grub2.png" alt="centos7 with grub2">
@@ -15,7 +16,7 @@ Once you install CentOS 7 alongside your Windows OS, you may find that you canno
 
 To fix this and have the Grub bootloader list your Windows OS, you need to edit the Grub bootloader files. If you have used CentOS is the past (with 6 or earlier), you may find that editing Grub is different. Previously, you would edit `/boot/grub/grub.conf`. This is no longer the case, as the grub2.cfg file is generated dynamically, based on dependency files. Here's what you need to edit to configure your bootloader.
 
-1. Boot into CentOS 7, if you haven't already.    
+1. Boot into CentOS 7, if you haven't already.
 2. Determine what partition your Windows OS resides on by running `sudo fdisk -l` in Terminal. Here's my output:
     <pre>
     Disk /dev/sda: 320.1 GB, 320072933376 bytes, 625142448 sectors
@@ -51,13 +52,13 @@ To fix this and have the Grub bootloader list your Windows OS, you need to edit 
     # menu entries you want to add after this comment.  Be careful not to change
     # the 'exec tail' line above.
     </pre>
-6. Below the last #, type on a new line: 
+6. Below the last #, type on a new line:
     <pre>
     menuentry "Windows 7" {
             set root=(hd0,1)
             chainloader +1
     </pre>
-7. Finally, run the following to apply the changes to the grub.cfg file: 
+7. Finally, run the following to apply the changes to the grub.cfg file:
     <pre>
     grub2-mkconfig --output=/boot/grub2/grub.cfg
     </pre>
@@ -65,8 +66,3 @@ To fix this and have the Grub bootloader list your Windows OS, you need to edit 
       <pre>
       GRUB_DEFAULT="Windows 7"
       </pre>
-
-    
- 
-
-

@@ -1,0 +1,11 @@
+- slug: mac
+  name: Mac
+
+- slug: windows
+  name: Windows
+
+- slug: linux
+  name: Linux
+
+- slug: troubleshooting
+  name: Troubleshooting
