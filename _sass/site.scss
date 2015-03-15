@@ -2,22 +2,22 @@
    Site wide styles
    ========================================================================== */
 
-/*
+/* 
    Selection
    ========================================================================== */
 
-::-moz-selection {
-	background-color: lighten($basecolor, 65%);
-	color: $basecolor;
-	text-shadow: none;
-}
-::selection {
-	background-color: lighten($basecolor, 65%);
-	color: $basecolor;
-	text-shadow: none;
+::-moz-selection { 
+	background-color: lighten($basecolor, 65%); 
+	color: $basecolor; 
+	text-shadow: none; 
+}  	
+::selection { 
+	background-color: lighten($basecolor, 65%); 
+	color: $basecolor; 
+	text-shadow: none; 
 }
 
-/*
+/* 
    Global classes
    ========================================================================== */
 
@@ -63,85 +63,10 @@
 	}
 }
 
-/*
+/* 
    Global transition
    ========================================================================== */
 
 b, i, strong, em, blockquote, p, q, span, figure, img, h1, h2, header, input, a {
 	@include transition(all .2s ease);
-}
-
-
- branch: master  lanyonm.github.io/_sass/main.scss
-Michael Lanyonlanyonm on Nov 27, 2014 use jekyll-sass to concatenate and compress css
-1 contributor
-RawBlameHistory   Executable File  160 lines (133 sloc)  2.651 kb
-/*****************************************************************************/
-/*
-/* Common
-/*
-/*****************************************************************************/
-
-html {
-  font-size: 18px;
-}
-@media (min-width: 38em) {
-  html {
-    font-size: 20px;
-  }
-}
-
-.center {
-  text-align: center;
-}
-
-pre {
-  overflow: auto;
-  white-space: pre;
-  word-break: normal;
-  word-wrap: normal;
-}
-
-/*****************************************************************************/
-/*
-/* sidebar
-/*
-/*****************************************************************************/
-
-.sidebar {
-  font-size: 0.8rem;
-}
-
-.sidebar-nav-item {
-  letter-spacing: calc(0.08em);
-  text-transform: uppercase;
-}
-
-.sidebar .social-icons a {
-  color: rgba(255, 255, 255, 0.6);
-  padding-right: 0.75em;
-}
-
-.sidebar .social-icons a:hover {
-  text-decoration: none;
-}
-
-/*****************************************************************************/
-/*
-/* Home
-/*
-/*****************************************************************************/
-
-ul.posts {
-  list-style-type: none;
-  margin-bottom: 2rem;
-  padding: 0;
-}
-
-ul.posts li {
-  padding: 0.2rem 0;
-}
-
-ul.posts li span {
-  color: silver;
 }
