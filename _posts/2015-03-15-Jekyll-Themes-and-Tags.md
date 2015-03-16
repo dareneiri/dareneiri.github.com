@@ -23,7 +23,6 @@ layout: page
 title: Tags
 comments: false
 ---
-
 {% capture site_tags %}{% for tag in site.tags %}{{ tag | first }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
 <!-- site_tags: {{ site_tags }} -->
 {% assign tag_words = site_tags | split:',' | sort %}
@@ -50,7 +49,7 @@ comments: false
 ```
 3. If you commit the changes, you'll end up with an unstylized page with all your posts listed, sorted by their tags. Now to add some style.
 4. Go to `_sass/site.scss` and add the following to the top of the page, but below the first comment line (again, courtesy of [lanyonm](https://github.com/lanyonm/lanyonm.github.io/blob/master/_sass/main.scss):
-<pre>
+```
 /*****************************************************************************/
 /*
 /* Tags
@@ -100,4 +99,5 @@ comments: false
 
 /*
 ```
+
 5. Commit those changes and you should be set!
