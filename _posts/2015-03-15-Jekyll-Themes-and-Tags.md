@@ -17,7 +17,7 @@ This is a short write-up on how to integrate tags in the Jekyll theme Minimal Mi
 
 1. In your primary GitHub directory, create a new directory called `tags`
 2. Create an `index.md` file, and copy-paste the following (courtesy of [https://github.com/lanyonm/lanyonm.github.io/blob/master/tags.html](lanyonm)):
-{% gist dareneiri/f39f1be6f8b619d68a0b %}
+{% gist dareneiri/9dc5013d31134b9472d3 %}
 3. If you commit the changes, you'll end up with an unstylized page with all your posts listed, sorted by their tags. Now to add some style.
 4. Go to `_sass/site.scss` and add the following to the top of the page, but below the first comment line (again, courtesy of [lanyonm](https://github.com/lanyonm/lanyonm.github.io/blob/master/_sass/main.scss):
 {% gist dareneiri/f39f1be6f8b619d68a0b %}
