@@ -21,7 +21,7 @@ When your tenant is up and running (took me more than 24 hrs), the first thing y
 
 You will go through the process of connecting your domain name (in my case, dareneiri.com) to Office 365. This way, instead of having some long address (i.e., @apismellifera.onmicrosoft.com), the addresses of your users in this demo can be @dareneiri.com). The Basic Setup process will guide you through this, which you can view in detail [here](https://support.office.com/en-us/article/Verify-your-domain-in-Office-365-6383f56d-3d09-4dcb-9b41-b5f5a5efd611).
 
-The issue I had was that no matter what I did within hover.com to change my DND entries, I kept getting errors! The verification steps within the Manage DNS settings would not accept my DNS entries. What's more interesting is that the errors kept changing.
+The issue I had was that no matter what I did within hover.com to change my DNS entries, I kept getting errors! The verification steps within the Manage DNS settings would not accept my DNS entries. What's more interesting is that the errors kept changing.
 
 <figure>
     <img src="{{ site.url }}/images/officedns1.png" alt="basicsetup">
