@@ -9,13 +9,13 @@ comments: true
 
 In an effort to diversify my skill set, I have been spending more time working with Office 365, with the end-goal of taking the [MS-Exam 70-346: Managing Office 365 Identities and Requirements](https://www.microsoft.com/learning/en-us/mcsa-office365-certification.aspx) certification test. Subsequently, I would take the 70-347 if all goes well.
 
-There are some great resources, but they're scattered out there. In another post I'll provide more detail about that, but I wanted to focus on an issue I encountered while provisioning Office 365. By the way, if you don't have a live environment with Office 365 available, [https://paulrobichaux.wordpress.com/2014/06/04/creating-an-office-365-demo-tenant/](you can set up a demo environment for 90 days, for free).
+There are some great resources, but they're scattered out there. In another post I'll provide more detail about that, but I wanted to focus on an issue I encountered while provisioning Office 365. By the way, if you don't have a live environment with Office 365 available, [you can set up a demo environment for 90 days, for free](https://paulrobichaux.wordpress.com/2014/06/04/creating-an-office-365-demo-tenant/).
 
 
 When your tenant is up and running (took me more than 24 hrs), the first thing you want to do is go through the Basic Setup process.
 
 <figure>
-    <img src="{{ site.url }}/images/basicsetup.png" alt="basicsetup">
+    <img src="{{ site.url }}/images/setup.png" alt="basicsetup">
 </figure>
 
 
@@ -27,11 +27,13 @@ The issue I had was that no matter what I did within hover.com to change my DND 
     <img src="{{ site.url }}/images/officedns1.png" alt="basicsetup">
 </figure>
 
+...and here's the first change.
 
 <figure>
     <img src="{{ site.url }}/images/officedns2.png" alt="basicsetup">
 </figure>
 
+...re-running it again causes different errors to occur...
 
 <figure>
     <img src="{{ site.url }}/images/officedns3.png" alt="basicsetup">
