@@ -1,24 +1,53 @@
 ---
 layout: post
-title: Adding Tags to the Jekyll Theme, Minimal Mistakes
-tags: [jekyll]
+title: Really Weird DNS Issues with Office 365
+tags: [microsoft, office365]
 published: true
-excerpt: "Tags are a nice way to categorize posts, but aren't built into some themes. The jekyll theme Minimal Mistakes is awesome, and I provide detail on how to integrate tags."
+excerpt: "I provisioned a tenant for Office 365, and the first step is to set up your DNS. I ran into some weird issues, but they turned out to be not issues, but maybe a bug."
 comments: true
 ---
 
-I really like using the Jekyll theme [Minimal Mistakes](https://mademistakes.com/work/minimal-mistakes-jekyll-theme/), made by [Michael Rose](https://mademistakes.com/). As I'm slowly working my way to build content on this site, I knew it would be helpful to organize my posts through tags, which Jekyll has support for through the [YAML front matter](http://jekyllbootstrap.com/lessons/jekyll-introduction.html#toc_9). However, much more is involved to really make use of tags and to have them nicely organized. There are [Jekyll tag plug-ins](http://jekyllrb.com/docs/plugins/#tags) you can add, but if you host your site on GitHub for free like me, they may not work if it's not part of the [GitHub plug-in repo](https://help.github.com/articles/using-jekyll-plugins-with-github-pages/).
+In an effort to diversify my skill set, I have been spending more time working with Office 365, with the end-goal of taking the [MS-Exam 70-346: Managing Office 365 Identities and Requirements](https://www.microsoft.com/learning/en-us/mcsa-office365-certification.aspx) certification test. Subsequently, I would take the 70-347 if all goes well.
 
-This is a short write-up on how to integrate tags in the Jekyll theme Minimal Mistakes. It'll probably work similarly in other themes too, but I haven't explored that. The end result should look similar to the picture below:
+There are some great resources, but they're scattered out there. In another post I'll provide more detail about that, but I wanted to focus on an issue I encountered while provisioning Office 365. By the way, if you don't have a live environment with Office 365 available, [https://paulrobichaux.wordpress.com/2014/06/04/creating-an-office-365-demo-tenant/](you can set up a demo environment for 90 days, for free).
+
+
+When your tenant is up and running (took me more than 24 hrs), the first thing you want to do is go through the Basic Setup process.
 
 <figure>
-    <img src="{{ site.url }}/images/jekylltags.png" alt="tags">
+    <img src="{{ site.url }}/images/basicsetup.png" alt="basicsetup">
 </figure>
 
-1. In your primary GitHub directory, create a new directory called `tags`
-2. Create an `index.md` file, and copy-paste the following (courtesy of [lanyonm](https://github.com/lanyonm/lanyonm.github.io/blob/master/tags.html)):
-{% gist dareneiri/571e163435df75959afb %}
-3. If you commit the changes, you'll end up with an unstylized page with all your posts listed, sorted by their tags. Now to add some style.
-4. Go to `_sass/site.scss` and add the following to the top of the page, but below the first comment line (again, courtesy of [lanyonm](https://github.com/lanyonm/lanyonm.github.io/blob/master/_sass/main.scss):
-{% gist dareneiri/00c5aabc3bea37971935 %}
-5. Commit those changes and you should be set!
+
+You will go through the process of connecting your domain name (in my case, dareneiri.com) to Office 365. This way, instead of having some long address (i.e., @apismellifera.onmicrosoft.com), the addresses of your users in this demo can be @dareneiri.com). The Basic Setup process will guide you through this, which you can view in detail [here](https://support.office.com/en-us/article/Verify-your-domain-in-Office-365-6383f56d-3d09-4dcb-9b41-b5f5a5efd611).
+
+The issue I had was that no matter what I did within hover.com to change my DND entries, I kept getting errors! The verification steps within the Manage DNS settings would not accept my DNS entries. What's more interesting is that the errors kept changing.
+
+<figure>
+    <img src="{{ site.url }}/images/officedns1.png" alt="basicsetup">
+</figure>
+
+
+<figure>
+    <img src="{{ site.url }}/images/officedns2.png" alt="basicsetup">
+</figure>
+
+
+<figure>
+    <img src="{{ site.url }}/images/officedns3.png" alt="basicsetup">
+</figure>
+
+
+From what I can tell, there is really nothing wrong with my DNS entries, and Office 365 is reporting false-errors. I verified this from Outlook by emailing my private Gmail account from my admin@dareneiri.com, Office 365 account, and that worked fine. Additionally, using the [Microsoft Remote Connectivity Analyzer](https://testconnectivity.microsoft.com/) reported no issues with my DNS entries:
+
+
+<figure>
+    <img src="{{ site.url }}/images/testconnectivity.png" alt="basicsetup">
+</figure>
+
+
+I wasn't able to find much information about this online, and whether this is a common issue. But from what I can tell, if you experience the same problems, feel free to ignore the problem and check the "Do not check this domain for incorrect DNS records" option From Domains > [Your domain] and "Find and fix issues" link.
+
+<figure>
+    <img src="{{ site.url }}/images/dnscheck.png" alt="basicsetup">
+</figure>
