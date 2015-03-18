@@ -1,5 +1,10 @@
 ---
-published: false
+layout: post
+title: Really Weird DNS Issues with Office 365
+tags: [microsoft, office365]
+published: true
+excerpt: "I provisioned a tenant for Office 365, and the first step is to set up your DNS. I ran into some weird issues, but they turned out to be not issues, but maybe a bug."
+comments: true
 ---
 
 In an effort to diversify my skill set, I have been spending more time working with Office 365, with the end-goal of taking the [MS-Exam 70-346: Managing Office 365 Identities and Requirements](https://www.microsoft.com/learning/en-us/mcsa-office365-certification.aspx) certification test. Subsequently, I would take the 70-347 if all goes well.
