@@ -1,11 +1,15 @@
 ---
 layout: post
 title: Configuring Grub 2 on CentOS 7 to Dual Boot with Windows 7
-tags: [windows, linux, troubleshooting]
+tags: 
+  - windows
+  - linux
+  - troubleshooting
 published: true
 excerpt: "You installed CentOS 7, and now you can't boot into Windows. If you want to dual boot CentOS 7 with Windows 7, you need to configure the Grub files. That is, unless you're happy to be stuck in Linux Land!"
 comments: true
 ---
+
 
 _This post assumes that Windows was installed first, and then CentOS was installed second._
 
@@ -57,6 +61,7 @@ To fix this and have the Grub bootloader list your Windows OS, you need to edit 
     menuentry "Windows 7" {
             set root=(hd0,1)
             chainloader +1
+            }
     </pre>
 7. Finally, run the following to apply the changes to the grub.cfg file:
     <pre>
