@@ -23,9 +23,9 @@ This took me a few months to resolve, primarily because I just don't have time t
 1. On your Windows 10 device, go to Start > and search for Credential Manager. 
 2. Select Windows Credentials
 3. Click on "Add a Windows credential"
-<figure>
+   <figure>
     <img src="{{ site.url }}/images/credential-manager.png" alt="credential manager">
-</figure>
+    </figure>
 4. A new window will pop up. 
 5. In the field for "Internet or Network address", type your samba share path (e.g., \\samba-share)
 6. In the field for "User name", enter samba-share\{your_username}
