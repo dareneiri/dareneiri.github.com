@@ -27,9 +27,9 @@ This took me a few months to resolve, primarily because I just don't have time t
     <img src="{{ site.url }}/images/credential-manager.png" alt="credential manager">
     </figure>
 4. A new window will pop up. 
-5. In the field for "Internet or Network address", type your samba share path (e.g., \\samba-share)
-6. In the field for "User name", enter samba-share\{your_username}
+5. In the field for "Internet or Network address", type your samba share path (e.g., `\\samba-share`)
+6. In the field for "User name", enter `samba-share\{your_username}`
 7. For password, type in your password
 
 
-Now, in my case, in Network from the Windows Explorer window, I was not able to see my samba shares. However, if I type in \\samba-share (in this example), I am able to see my files as expected. You can also use the Run command (Windows - R) and type in the samba share path to view your share.
+Now, in my case, in Network from the Windows Explorer window, I was not able to see my samba shares. However, if I type in `\\samba-share` (in this example), I am able to see my files as expected. You can also use the Run command (Windows - R) and type in the samba share path to view your share.
