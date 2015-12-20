@@ -25,7 +25,7 @@ This took me a few months to resolve, primarily because I just don't have time t
 3. Click on "Add a Windows credential"
 
 <figure>
-    <img src="{{ site.url }}/images/credential-manager.png" alt"credential manager">
+    <img src="{{ site.url }}/images/credential-manager.png" alt="credential manager">
 </figure>
 
 4. A new window will pop up. 
