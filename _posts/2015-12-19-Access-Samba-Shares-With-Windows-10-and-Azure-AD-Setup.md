@@ -11,18 +11,23 @@ comments: true
 ---
 
 
-Symptoms: 
+**Symptoms:** 
+
 1. You have Samba shares in your local network that you used to have access to, or have other devices on that network that can access those shares. 
 2. You're using Windows 10 with an Azure AD corporate or Windows Account
 
-Resolution: 
+**Resolution: **
 This took me a few months to resolve, primarily because I just don't have time to troubleshoot my own personal network/PC issues. But it sure is a wonderful feeling when you find the solution needed after so long! Credit goes to the Synology forum user mtjerneld, who responeded with a [working solution](http://forum.synology.com/enu/viewtopic.php?f=49&t=98792#p385856). 
 
 
 1. On your Windows 10 device, go to Start > and search for Credential Manager. 
 2. Select Windows Credentials
 3. Click on "Add a Windows credential"
-![credential-manager.png]({{site.baseurl}}/_posts/credential-manager.png)
+
+<figure>
+    <img src="{{ site.url }}/images/credential-manager.png" alt"credential manager">
+</figure>
+
 4. A new window will pop up. 
 5. In the field for "Internet or Network address", type your samba share path (e.g., \\samba-share)
 6. In the field for "User name", enter samba-share\{your_username}
