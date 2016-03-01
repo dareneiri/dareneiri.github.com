@@ -18,6 +18,7 @@ published: true
 
 Hey! Thanks for stopping by. If you are looking for information about my academic research, go to [my other page](https://darenmeiri.wordpress.com/)
 
+
 I am a long-time IT help desk/systems technician, first at UC San Diego's Academic Computing & Media Services, and now with Wolfram Research. For some of that time, I was simultaneously involved with scientific research on honey bees (my BS and MS degrees are in biology). Pursuing my academic interests, I started a PhD program at the University of Texas, Austin. That  lasted a year, simply because it no longer aligned with my [long-term personal goals](https://darenmeiri.wordpress.com/2014/10/30/why-i-decided-to-leave-academia/).
 
 
