@@ -1,7 +1,9 @@
 ---
 layout: post
 title: Ditching Dashlane for KeePassX
-tags: [mac, software]
+tags: 
+  - mac
+  - software
 published: true
 excerpt: "Dashlane raised its subscription price to $29/year. It's time to ditch it for an open source alternative."
 comments: true
@@ -12,7 +14,7 @@ comments: true
 
 This past weekend, I received an email from Dashlane requesting to automatically renew my premium membership. Dashlane is password manager and "digital wallet," and it works pretty well. Using it on Mac OS X, the interface is clean, the extensions for the browsers work without any issues, and also includes two-factor authentication via SMS. But for a premium membership, which includes syncing across all your devices and browsers, the cost is quite steep at $29.99 per year. I bought mine for $19.99 per year but it seems like they increased the price, so the price increase made me rethink about whether Dashlane is even worth it anymore.
 
-##What is a Password Manager?
+## What is a Password Manager?
 
 Why even pay for a password manager? Firefox, Chrome, and Safari already include password managers, but they are specific to the browser itself, and you cannot readily access those passwords if you are using a mobile app (i.e., banking apps that do not cache your password).
 
@@ -26,7 +28,7 @@ And forget about complex passwords, because they're [not as safe as you might th
 ![xkcd_comic](http://imgs.xkcd.com/comics/password_strength.png)
 
 
-##Password Manager Options
+## Password Manager Options
 
 There are quite a few password managers to choose from. I used LastPass a few years ago, but I found the interface a bit too cluttered and confusing, so I started using Dashlane.
 
