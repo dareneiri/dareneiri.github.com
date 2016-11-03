@@ -26,12 +26,12 @@ Documentation for MIMIC II is also available, but it's not as thorough as it cou
 
 1. Download the [python script](https://github.com/AndreaBravi/MIMIC2). 
 2. If you downloaded the script in your Downloads folder, then you will need to launch the Command Prompt window and type the following: 
-<pre>python.exe C:\Users\YOURUSERNAME\Downloads\MIMIC2-master\MIMIC2-master\mimic2_setup.py</pre>
+	<pre>python.exe C:\Users\YOURUSERNAME\Downloads\MIMIC2-master\MIMIC2-master\mimic2_setup.py</pre>
 3. If python.exe does not work, then you will need to set up your PATH variable to load Python, or point directly to the python executable. 
 4. The script will ask for **script to pg_env.bat:**. This is referring to the Postgres installation directory. For me I typed: 
-<pre>C\Program Files\PostgreSQL\9.6</pre>
+	<pre>C\Program Files\PostgreSQL\9.6</pre>
 5. Now you will be asked for **Provide Path to MIMIC Importer:**, which is the script that comes from MIMIC's website where you download the flat files (it is not included with the flat files). For me I saved it to my desktop: 
-<pre> C:\Users\darene\Desktop\MIMIC\MIMIC-Importer-2.6</pre>
+	<pre> C:\Users\darene\Desktop\MIMIC\MIMIC-Importer-2.6</pre>
 6. The script will ask for the database credentials you'd like to use. 
 7. Finally, it will untar the tarballed flat files which will take a few minutes, and then proceed with adding each subject to the database. 
 
