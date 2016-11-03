@@ -26,7 +26,7 @@ Documentation for MIMIC II is also available, but it's not as thorough as it cou
 
 1. Download the [python script](https://github.com/AndreaBravi/MIMIC2). 
 2. If you downloaded the script in your Downloads folder, then you will need to launch the Command Prompt window and type the following: 
-</pre>python.exe C:\Users\YOURUSERNAME\Downloads\MIMIC2-master\MIMIC2-master\mimic2_setup.py</pre>
+<pre>python.exe C:\Users\YOURUSERNAME\Downloads\MIMIC2-master\MIMIC2-master\mimic2_setup.py</pre>
 3. If python.exe does not work, then you will need to set up your PATH variable to load Python, or point directly to the python executable. 
 4. The script will ask for **script to pg_env.bat:**. This is referring to the Postgres installation directory. For me I typed: 
 <pre>C\Program Files\PostgreSQL\9.6</pre>
