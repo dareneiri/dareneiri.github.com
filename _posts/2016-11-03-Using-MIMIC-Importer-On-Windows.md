@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 layout: post
 tags:
   - databases
@@ -35,5 +35,4 @@ Documentation for MIMIC II is also available, but it's not as thorough as it cou
 6. The script will ask for the database credentials you'd like to use. 
 7. Finally, it will untar the tarballed flat files which will take a few minutes, and then proceed with adding each subject to the database. 
 
-If you have any trouble, the included README.txt that's included with the flat file download is very thorough. 
-
+If you have any trouble, the included README.txt that's included with the flat file download is very thorough.
