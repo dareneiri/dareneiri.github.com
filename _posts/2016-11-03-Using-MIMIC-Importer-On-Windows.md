@@ -1,5 +1,15 @@
 ---
 published: false
+layout: post
+tags:
+  - databases
+  - postgreSQL
+  - windows
+excerpt: >-
+  The MIMIC II database is an excellent resource with thousands of de-identified
+  ICU patients and their EMR data. Installation of the database for Windows is a
+  bit sparse so here is some more information on how to get it working. 
+comments: true
 ---
 ## Installing MIMIC II Database on Windows
 
