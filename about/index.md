@@ -1,15 +1,15 @@
 ---
 layout: page
 title: About This Site
-tags: 
+tags:
   - about
   - Jekyll
   - theme
   - responsive
 modified: {}
 comments: false
-image: 
-  feature: "sample-image-2.jpg"
+image:
+  feature: sample-image-2.jpg
   credit: Eiri
 published: true
 ---
@@ -19,10 +19,10 @@ published: true
 Hey! Thanks for stopping by. If you are looking for information about my academic research, go to [my other page](https://darenmeiri.wordpress.com/)
 
 
-I am a long-time IT help desk/systems technician, first at UC San Diego's Academic Computing & Media Services, and now with Wolfram Research. For some of that time, I was simultaneously involved with scientific research on honey bees (my BS and MS degrees are in biology). Pursuing my academic interests, I started a PhD program at the University of Texas, Austin. That  lasted a year, simply because it no longer aligned with my [long-term personal goals](https://darenmeiri.wordpress.com/2014/10/30/why-i-decided-to-leave-academia/).
+I am currently a data analyst for an electronic health record software company. Previously I worked in IT support/administration at UC San Diego and Wolfram Research. My formal education is in biology (BS and MS in Biology) and was able to publish two peer-reviewed papers on honey bee health. I started a PhD program at the University of Texas, Austin, but left because it no longer aligned with my [long-term personal goals](https://darenmeiri.wordpress.com/2014/10/30/why-i-decided-to-leave-academia/).
 
 
-My goal here is to write about these topics, teach myself a few things, and improve my knowledge and technical skills in the process.
+I strongly believe in documentation. Clear documentation. Through documentation. This website serves as a resource to myself, and hopefully others, who are trying to find documentation online to do X or Y and accomplish Z. 
 
 ## The Name
 
