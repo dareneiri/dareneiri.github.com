@@ -1,9 +1,13 @@
 ---
 layout: post
 title: Asus Chromebox with Full Linux Install
-tags: [htpc, linux]
+tags:
+  - htpc
+  - linux
 published: true
-excerpt: "Walkthrough on installing Ubuntu Linux (14.04) on an Asus Chromebox. This will be used as an HTPC with Plex Home Theater."
+excerpt: >-
+  Walkthrough on installing Ubuntu Linux (14.04) on an Asus Chromebox. This will
+  be used as an HTPC with Plex Home Theater.
 comments: true
 ---
 
@@ -38,6 +42,9 @@ I am assuming you already have Plex Media Server working with all your media. I 
 ## Step-by-Step Walkthrough
 
 ### Chromebox Setup and Ubuntu Installation
+
+__Please note that the Kodi E-Z Setup Script is still in active development and options may change, or this process may no longer work. I wrote this in Feb 2015 and so the details of each step may have changed. I will try to keep this updated but please proceed at your own risk__
+
 1. With your Chromebox unplugged, prepare your device for the linux installation by disabling the [firmware write protection](http://kodi.wiki/view/Chromebox#Disable_Firmware_Write_Protect).
     1. To open the Chromebox, you need to remove the four rubber footpads. I found it easiest to use a small flathead and lift up from the inner-rounded corner of the footpad
         <figure>
@@ -56,7 +63,7 @@ I am assuming you already have Plex Media Server working with all your media. I 
     1. **NOTE:** Most of these instructions are directly from the link above, but I want to separate those instructions to make it easier see what needs to be done.
    1. Power up your Chromebox, and set up the internet connection (the first screen). DO NOT continue with the set up prompts.
    2. Press CTRL-ALT-F2 to view the command prompt
-   3. You will be prompted for a username. Enter:
+   3. You will be prompted for a username. Enter: 
         <pre>chronos</pre>
    4. Enter the following to download the EZ setup script:
         <pre>curl -L -O http://goo.gl/3Tfu5W
@@ -64,7 +71,7 @@ I am assuming you already have Plex Media Server working with all your media. I 
        as an alternate, if the above link does not work:
         <pre>curl -L -O https://db.tt/vUPL3OrH
    sudo bash vUPL3OrH</pre>
-   5. You will be provided some options to choose from. Enter **5**, for **Install/update: custom coreboot Firmware**
+   5. You will be provided some options to choose from. ~~Enter **5**, for **Install/update: custom coreboot Firmware**~~ Enter **6** (as of ~2017), for **Install/Update: Custom UEFI Firmware**
    6. Type **Y** to continue
    7. You may be prompted to ask if you want to install the headless firmware. Go ahead and say no.
    8. Backup the ChromeOS firmware to a USB stick.
