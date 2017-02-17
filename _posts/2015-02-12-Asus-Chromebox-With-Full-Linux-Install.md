@@ -65,12 +65,10 @@ __Please note that the Kodi E-Z Setup Script is still in active development and 
    2. Press CTRL-ALT-F2 to view the command prompt
    3. You will be prompted for a username. Enter: 
         <pre>chronos</pre>
-   4. Enter the following to download the EZ setup script:
-        <pre>curl -L -O http://goo.gl/3Tfu5W
-   sudo bash 3Tfu5W</pre>
-       as an alternate, if the above link does not work:
-        <pre>curl -L -O https://db.tt/vUPL3OrH
-   sudo bash vUPL3OrH</pre>
+   4. Enter the following to download and run the EZ setup script:
+        <pre>cd; curl -L -O https://mrchromebox.tech/setup-kodi.sh && sudo bash setup-kodi.sh
+</pre>
+
    5. You will be provided some options to choose from. ~~Enter **5**, for **Install/update: custom coreboot Firmware**~~ Enter **6** (as of ~2017), for **Install/Update: Custom UEFI Firmware**. Note that the update from coreboot to UEFI seems to have caused issues for some people (see comments). Be sure to check the latest information in the forums above and on the [developer's website](https://mrchromebox.tech/)
    6. Type **Y** to continue
    7. You may be prompted to ask if you want to install the headless firmware. Go ahead and say no.
