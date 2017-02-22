@@ -70,10 +70,10 @@ __Please note that the Kodi E-Z Setup Script is still in active development and 
 
    5. You will be provided some options to choose from. ~~Enter **5**, for **Install/update: custom coreboot Firmware**~~ Enter **6** (as of ~2017), for **Install/Update: Custom UEFI Firmware**. Note that the update from coreboot to UEFI seems to have caused issues for some people (see comments). Be sure to check the latest information in the forums above and on the [developer's website](https://mrchromebox.tech/)
    6. Type **Y** to continue
-   7. You may be prompted to ask if you want to install the headless firmware. Go ahead and say no.
+   7. ~~You may be prompted to ask if you want to install the headless firmware. Go ahead and say no.~~. The headless option is no longer an option as of ~2017. 
    8. Backup the ChromeOS firmware to a USB stick.
-   9. Then download and setup a USB stick to liveboot Ubuntu on a [Mac](http://sourceforge.net/projects/mlul/) or [PC](http://www.linuxliveusb.com/)
-   10. Stick in the liveboot USB stick into the Chromebox, and reboot it.
+   9. Then download and setup a USB stick to liveboot Ubuntu on a [Mac](http://sourceforge.net/projects/mlul/) or [PC](http://www.linuxliveusb.com/). ****Please note that with Ubuntu will probably not install the grub EFI shim to the default UEFI boot target and this will cause your Chromebox to boot up to a black screen which is the EFI shell. See [MrChromebox.tech's FAQ](https://mrchromebox.tech/#faq) which addresses how to resolve this. Otherwise you can use GalliumOS. 
+   10. Stick in the liveboot USB stick into the Chromebox, and reboot it.****
    11. You will have five seconds to press ESC key to display the boot menu. If you miss it simply reboot it again.
    12. Select the USB stick from the boot menu, and then you can proceed with installing Ubuntu.
 
