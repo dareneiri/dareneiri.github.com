@@ -33,7 +33,7 @@ The [Asus Chromebox](http://www.asus.com/us/ASUS_Chromebox/) fits the bill perfe
 ## Requirements
 If you aim to accomplish the same setup for your Chromebox as I have, follow the guide below. Again, this is for a standalone Linux Ubuntu boot on the Asus Chromebox. **This process will remove ChromeOS** and does not have the option to dual-boot. Once you have finished this process, you will have accomplished the following:
 
-1. An Asus Chromebox with Ubuntu Linux 14.04, as a standalone boot
+1. An Asus Chromebox with Ubuntu Linux 14.04, as a standalone boot. 
 2. Plex Home Theater installed on the Chromebox, accessing Plex Media Server on the Synology NAS
 3. VNC server up and running, to remotely access the system
 
@@ -68,7 +68,7 @@ __Please note that the Kodi E-Z Setup Script is still in active development and 
    4. Enter the following to download and run the EZ setup script:
         <pre>cd; curl -L -O https://mrchromebox.tech/setup-kodi.sh && sudo bash setup-kodi.sh</pre>
 
-   5. You will be provided some options to choose from. ~~Enter **5**, for **Install/update: custom coreboot Firmware**~~ Enter **6** (as of ~2017), for **Install/Update: Custom UEFI Firmware**. Note that the update from coreboot to UEFI seems to have caused issues for some people (see comments). Be sure to check the latest information in the forums above and on the [developer's website](https://mrchromebox.tech/)
+   5. You will be provided some options to choose from. ~~Enter **5**, for **Install/update: custom coreboot Firmware**~~ Enter **6** (as of ~2017), for **Install/Update: Custom UEFI Firmware**.
    6. Type **Y** to continue
    7. ~~You may be prompted to ask if you want to install the headless firmware. Go ahead and say no.~~. The headless option is no longer an option as of ~2017. 
    8. Backup the ChromeOS firmware to a USB stick.
