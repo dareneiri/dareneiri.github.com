@@ -3,6 +3,8 @@ published: true
 ---
 ## How to install pip packages for python when FIPS is enabled on a RHEL7/CentOS7 machine
 
+
+## The Problem
 I came across a problem recently with one of the machines I work with running RHEL7. FIPS is enabled, not allowing the md5 hash to be used for verifying python packages when using pip. 
 
 
@@ -26,6 +28,8 @@ The problem is that FIPS is enabled (noted by the "1"):
 $: cat /proc/sys/crypto/fips_enabled
 1
 ```
+
+## The Solution
 
 For my environment, I cannot turn off FIPS. You can spin up a clean CentOS 7 VM and do the above and it works just fine beacuse FIPS isn't enabled. If you run into this issue, then you you need to do the following: 
 1. Install pip via rpm:
