@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 ---
 ## How to install pip packages for python when FIPS is enabled on a RHEL7/CentOS7 machine
 
