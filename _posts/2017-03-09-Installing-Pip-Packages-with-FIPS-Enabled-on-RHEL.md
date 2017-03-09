@@ -1,5 +1,14 @@
 ---
 published: true
+layout: post
+tags:
+  - linux
+  - python
+excerpt: >-
+  Your Linux environment may have FIPS enabled, which is something you cannot
+  get around. This   causes problems for installing python packages via pip. I
+  have a workaround to resolve this issue.  
+comments: true
 ---
 ## How to install pip packages for python when FIPS is enabled on a RHEL7/CentOS7 machine
 
