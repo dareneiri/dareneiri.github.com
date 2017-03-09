@@ -38,13 +38,17 @@ For my environment, I cannot turn off FIPS. You can spin up a clean CentOS 7 VM 
     ```
   
 2. With pip now installed, install your desired package, but use the `-i` arugment like so:
-...```bash
-...$: pip install <SOME_PACKAGE> -i https://pypi.org/simple/
-...
-...$: pip install lifelines -i https://pypi.org/simple/
-...```
+   
+   ```bash
+    $: pip install <SOME_PACKAGE> -i https://pypi.org/simple/
+    ```
+    
+    ```bash
+    $: pip install lifelines -i https://pypi.org/simple/
+    ```
+    
 3. You may get a warning to upgrade, which you can perform like so: 
 
-```bash
-sudo pip install --upgrade pip -i https://pypi.org/simple/
-```
+    ```bash
+    sudo pip install --upgrade pip -i https://pypi.org/simple/
+    ```
