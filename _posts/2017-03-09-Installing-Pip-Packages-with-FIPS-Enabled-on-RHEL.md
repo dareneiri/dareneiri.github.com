@@ -28,6 +28,7 @@ $: cat /proc/sys/crypto/fips_enabled
 
 For my environment, I cannot turn off FIPS. You can spin up a clean CentOS 7 VM and do the above and it works just fine beacuse FIPS isn't enabled. If you run into this issue, then you you need to do the following: 
 1. Install pip via rpm:
+
 ```bash
 $: curl -O ftp://mirror.switch.ch/pool/4/mirror/centos/7.3.1611/cloud/x86_64/openstack-newton/common/python-pip-8.1.2-1.el7.noarch.rpm 
 ```
