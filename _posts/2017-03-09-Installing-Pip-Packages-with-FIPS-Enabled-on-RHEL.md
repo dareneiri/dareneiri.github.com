@@ -32,6 +32,7 @@ For my environment, I cannot turn off FIPS. You can spin up a clean CentOS 7 VM 
     ```bash
     $: curl -O ftp://mirror.switch.ch/pool/4/mirror/centos/7.3.1611/cloud/x86_64/openstack-newton/common/python-pip-8.1.2-1.el7.noarch.rpm 
     ```
+    
     ```bash
     $: sudo yum install python-pip-8.1.2-1.el7.noarch.rpm
     ```
