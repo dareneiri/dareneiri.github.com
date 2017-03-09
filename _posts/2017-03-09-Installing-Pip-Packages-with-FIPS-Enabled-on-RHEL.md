@@ -39,7 +39,7 @@ For my environment, I cannot turn off FIPS. You can spin up a clean CentOS 7 VM 
   
 2. With pip now installed, install your desired package, but use the `-i` arugment like so:
    
-   ```bash
+    ```bash
     $: pip install <SOME_PACKAGE> -i https://pypi.org/simple/
     ```
     
