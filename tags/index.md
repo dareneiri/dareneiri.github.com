@@ -5,6 +5,7 @@ comments: false
 image:
   feature: sample-image-2.jpg
   credit: Eiri
+published: true
 ---
 
 {% capture site_tags %}{% for tag in site.tags %}{{ tag | first }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
