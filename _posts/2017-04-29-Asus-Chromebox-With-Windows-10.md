@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 layout: post
 tags:
   - htpc
@@ -42,6 +42,3 @@ At this point you have updated Chromebox's firmware and you can now proceed to i
 
 
 ![Grab the chipset drivers for Windows 10](http://dareneiri.github.io/images/chipset_driver_download.png)
-
-
-
