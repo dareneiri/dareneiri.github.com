@@ -19,10 +19,10 @@ published: true
 Hey! Thanks for stopping by. If you are looking for information about my academic research, go to [my other page](https://darenmeiri.wordpress.com/)
 
 
-I am currently a data analyst for an electronic health record software company. Previously I worked in IT support/administration at UC San Diego and Wolfram Research. My formal education is in biology (BS and MS in Biology) and was able to publish two peer-reviewed papers on honey bee health. I started a PhD program at the University of Texas, Austin, but left because it no longer aligned with my [long-term personal goals](https://darenmeiri.wordpress.com/2014/10/30/why-i-decided-to-leave-academia/).
+I am currently a data scientist for an electronic health record software company. Previously I worked in IT support/administration at UC San Diego and Wolfram Research. My formal education is in biology (BS and MS in Biology) and was able to publish two peer-reviewed papers on honey bee health. I started a PhD program at the University of Texas, Austin, but left because it no longer aligned with my [long-term personal goals](https://darenmeiri.wordpress.com/2014/10/30/why-i-decided-to-leave-academia/).
 
 
-I strongly believe in documentation. Clear documentation. Thorough documentation. This website serves as a resource for myself, and hopefully others, who are trying to find documentation online to do X or Y and accomplish Z. 
+This website serves as a resource for myself, and hopefully others, who are trying to find documentation online to do X or Y and accomplish Z. 
 
 ## The Name
 
