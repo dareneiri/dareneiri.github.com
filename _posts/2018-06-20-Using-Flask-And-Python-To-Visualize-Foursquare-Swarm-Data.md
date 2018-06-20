@@ -33,6 +33,10 @@ I plan on releasing the code on GitHub. There's a lot more that can be done to i
 
 My motivation for creating this was more for the learning experience as well as having the ability to download my check-in data. Here's a preview of what's generated from all that data. 
 
+[Try downloading your Foursquare Swarm history!](https://dareneiri.pythonanywhere.com/)
+
+
+
 ![]({{site.baseurl}}/images/preview.png)
 
 ![]({{site.baseurl}}/images/preview1.png)
