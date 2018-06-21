@@ -32,7 +32,7 @@ I used the following methods to accomplish this:
 4. Parse data using Python. 
 5. Create developer accounts with Mapbox and Foursquare to work with APIs. 
 
-I plan on releasing the code on GitHub. There's a lot more that can be done to improve this web application. Anyone who wants to run this on their own PythonAnywhere account will be able to fork the repo and only make minor modifications. 
+[You can view the code I wrote on GitHub](https://github.com/dareneiri/unleash_foursquare). There's a lot more that can be done to improve this web application. Anyone who wants to run this on their own PythonAnywhere account will be able to fork the repo and only make minor modifications. 
 
 My motivation for creating this was more for the learning experience as well as having the ability to download my check-in data. 
 
