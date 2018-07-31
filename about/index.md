@@ -18,10 +18,6 @@ published: true
 
 Hey! Thanks for stopping by. If you are looking for information about my academic research, go to [my other page](https://darenmeiri.wordpress.com/)
 
-
-I am a data scientist for an electronic health record software company. I really enjoye working with data and the challenges that come with it. 
-
-
 This website serves as a resource for myself, and hopefully others, who are trying to find documentation online to do X or Y and accomplish Z. 
 
 ## The Name
