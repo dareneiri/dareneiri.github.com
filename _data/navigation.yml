@@ -1,13 +1,12 @@
-# Site navigation links
-
-- title: About
-  url: /about/
-
-- title: All Posts
-  url: /posts/
-
-- title: Bee Research
-  url: https://darenmeiri.wordpress.com/
-
-- title: Tags
-  url: /tags/
+# main links
+main:
+  - title: "Quick-Start Guide"
+    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
+  # - title: "About"
+  #   url: https://mmistakes.github.io/minimal-mistakes/about/
+  # - title: "Sample Posts"
+  #   url: /year-archive/
+  # - title: "Sample Collections"
+  #   url: /collection-archive/
+  # - title: "Sitemap"
+  #   url: /sitemap/
