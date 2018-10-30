@@ -8,6 +8,7 @@ excerpt: >-
   Walkthrough on installing Ubuntu Linux (14.04) on an Asus Chromebox. This will
   be used as an HTPC with Plex Home Theater.
 comments: true
+toc: true
 ---
 
 
@@ -41,7 +42,8 @@ I am assuming you already have Plex Media Server working with all your media. I 
 
 ### Chromebox Setup and Ubuntu Installation
 
-__Please note that the Kodi E-Z Setup Script is still in active development and options may change, or this process may no longer work. I wrote this in Feb 2015 and so the details of each step may have changed. I will try to keep this updated but please proceed at your own risk__
+Please note that the Kodi E-Z Setup Script is still in active development and options may change, or this process may no longer work. I wrote this in Feb 2015 and so the details of each step may have changed. I will try to keep this updated but please proceed at your own risk
+{: .notice--warning} 
 
 1. With your Chromebox unplugged, prepare your device for the linux installation by disabling the [firmware write protection](http://kodi.wiki/view/Chromebox#Disable_Firmware_Write_Protect).
     1. To open the Chromebox, you need to remove the four rubber footpads. I found it easiest to use a small flathead and lift up from the inner-rounded corner of the footpad

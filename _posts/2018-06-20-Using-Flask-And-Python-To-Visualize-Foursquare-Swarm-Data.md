@@ -6,6 +6,7 @@ tags:
   - flask
 excerpt: 'Using Flask, Python, and Mapbox to visualize Foursquare Swarm check-in data.'
 comments: true
+toc: true
 ---
 ## Introduction
 [Foursquare Swarm](https://www.swarmapp.com/) is a mobile application that allows you to check in to locations (places of interest, restaurants, etc).

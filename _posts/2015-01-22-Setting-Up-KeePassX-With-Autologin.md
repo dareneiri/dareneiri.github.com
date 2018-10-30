@@ -4,6 +4,7 @@ tags: [mac, software]
 published: true
 excerpt: "How to compile the KeePassX build with KessPassHTTP support"
 comments: true
+toc: true
 ---
 
 

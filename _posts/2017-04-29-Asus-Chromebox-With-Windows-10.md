@@ -7,6 +7,7 @@ tags:
   - chromebox
 excerpt: Walkthrough on installing Windows 10 over Ubuntu on a Chromebox
 comments: true
+toc: true
 ---
 ## A Short Walkthrough to Installing Windows 10 on an Asus Chromebox
 

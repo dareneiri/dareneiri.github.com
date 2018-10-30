@@ -8,6 +8,7 @@ excerpt: >-
   get around. This   causes problems for installing python packages via pip. I
   have a workaround to resolve this issue.  
 comments: true
+toc: true
 ---
 ## How to install pip packages for python when FIPS is enabled on a RHEL7/CentOS7 machine
 
