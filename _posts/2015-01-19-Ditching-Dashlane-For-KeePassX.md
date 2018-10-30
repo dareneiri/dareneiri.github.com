@@ -1,16 +1,12 @@
 ---
-layout: post
 title: Ditching Dashlane for KeePassX
-tags: 
+tags:
   - mac
   - software
 published: true
 excerpt: "Dashlane raised its subscription price to $29/year. It's time to ditch it for an open source alternative."
 comments: true
 ---
-
-{% include _toc.html %}
-
 
 This past weekend, I received an email from Dashlane requesting to automatically renew my premium membership. Dashlane is password manager and "digital wallet," and it works pretty well. Using it on Mac OS X, the interface is clean, the extensions for the browsers work without any issues, and also includes two-factor authentication via SMS. But for a premium membership, which includes syncing across all your devices and browsers, the cost is quite steep at $29.99 per year. I bought mine for $19.99 per year but it seems like they increased the price, so the price increase made me rethink about whether Dashlane is even worth it anymore.
 

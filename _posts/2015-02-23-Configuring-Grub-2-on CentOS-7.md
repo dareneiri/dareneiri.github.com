@@ -1,7 +1,6 @@
 ---
-layout: post
 title: Configuring Grub 2 on CentOS 7 to Dual Boot with Windows 7
-tags: 
+tags:
   - windows
   - linux
   - troubleshooting

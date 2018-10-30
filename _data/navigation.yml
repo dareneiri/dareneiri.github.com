@@ -1,13 +1,8 @@
-# Site navigation links
-
-- title: About
-  url: /about/
-
-- title: All Posts
-  url: /posts/
-
-- title: Bee Research
-  url: https://darenmeiri.wordpress.com/
-
-- title: Tags
-  url: /tags/
+# main links
+main:
+   - title: "About"
+     url: /about/
+   - title: "All Posts"
+     url: /year-archive/
+   - title: "Tags"
+     url: /tags/

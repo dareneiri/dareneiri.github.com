@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Creating A New User in Terminal (Mac OS X)
 tags: [mac]
 published: true

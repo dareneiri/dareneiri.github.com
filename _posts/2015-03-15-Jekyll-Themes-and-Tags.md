@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Adding Tags to the Jekyll Theme, Minimal Mistakes
 tags: [jekyll]
 published: true

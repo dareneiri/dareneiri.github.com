@@ -1,12 +1,10 @@
 ---
-layout: post
 title: What Is LVM and Should I Use It?
 tags: [ubuntu, linux]
 published: true
 excerpt: "You heard of using LVM as a good strategy for storage management, but what is it really, and should you use it?"
 comments: true
 ---
-{% include _toc.html %}
 
 #Introduction
 I'm quite used to navigating and futzing around Linux OS, primarily because of my exposure with Mac OS X and the similarities between Unix and Linux on file system navigation and terminal usage. However, I have recently been getting my hands quite dirty, and giving myself many headaches while I troubleshoot problems I come across.

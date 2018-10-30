@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Asus Chromebox with Full Linux Install
 tags:
   - htpc
@@ -11,7 +10,6 @@ excerpt: >-
 comments: true
 ---
 
-{% include _toc.html %}
 
 
 _This post is made possible because of the resources that others have provided. The purpose of this walkthrough is to provide details on how I set my Chromebox for my own use -- with a standalone boot of Ubuntu Linux (14.04). I have also set up my Chromebox with VNC for local access (or remote desktop access) and Plex Home Theater, which I will go over as well._
@@ -33,7 +31,7 @@ The [Asus Chromebox](http://www.asus.com/us/ASUS_Chromebox/) fits the bill perfe
 ## Requirements
 If you aim to accomplish the same setup for your Chromebox as I have, follow the guide below. Again, this is for a standalone Linux Ubuntu boot on the Asus Chromebox. **This process will remove ChromeOS** and does not have the option to dual-boot. Once you have finished this process, you will have accomplished the following:
 
-1. An Asus Chromebox with Ubuntu Linux 14.04, as a standalone boot. 
+1. An Asus Chromebox with Ubuntu Linux 14.04, as a standalone boot.
 2. Plex Home Theater installed on the Chromebox, accessing Plex Media Server on the Synology NAS
 3. VNC server up and running, to remotely access the system
 
@@ -63,16 +61,16 @@ __Please note that the Kodi E-Z Setup Script is still in active development and 
     1. **NOTE:** Most of these instructions are directly from the link above, but I want to separate those instructions to make it easier see what needs to be done.
    1. Power up your Chromebox, and set up the internet connection (the first screen). DO NOT continue with the set up prompts.
    2. Press CTRL-ALT-F2 to view the command prompt
-   3. You will be prompted for a username. Enter: 
+   3. You will be prompted for a username. Enter:
         <pre>chronos</pre>
    4. Enter the following to download and run the EZ setup script:
         <pre>cd; curl -L -O https://mrchromebox.tech/setup-kodi.sh && sudo bash setup-kodi.sh</pre>
 
    5. You will be provided some options to choose from. ~~Enter **5**, for **Install/update: custom coreboot Firmware**~~ Enter **6** (as of ~2017), for **Install/Update: Custom UEFI Firmware**.
    6. Type **Y** to continue
-   7. ~~You may be prompted to ask if you want to install the headless firmware. Go ahead and say no.~~. The headless option is no longer an option as of ~2017. 
+   7. ~~You may be prompted to ask if you want to install the headless firmware. Go ahead and say no.~~. The headless option is no longer an option as of ~2017.
    8. Backup the ChromeOS firmware to a USB stick.
-   9. Then download and setup a USB stick to liveboot Ubuntu on a [Mac](http://sourceforge.net/projects/mlul/) or [PC](http://www.linuxliveusb.com/). **Please note that with Ubuntu will probably not install the grub EFI shim to the default UEFI boot target and this will cause your Chromebox to boot up to a black screen which is the EFI shell. See [MrChromebox.tech's FAQ](https://mrchromebox.tech/#faq) which addresses how to resolve this. Otherwise you can use GalliumOS. 
+   9. Then download and setup a USB stick to liveboot Ubuntu on a [Mac](http://sourceforge.net/projects/mlul/) or [PC](http://www.linuxliveusb.com/). **Please note that with Ubuntu will probably not install the grub EFI shim to the default UEFI boot target and this will cause your Chromebox to boot up to a black screen which is the EFI shell. See [MrChromebox.tech's FAQ](https://mrchromebox.tech/#faq) which addresses how to resolve this. Otherwise you can use GalliumOS.
    10. Stick in the liveboot USB stick into the Chromebox, and reboot it.**
    11. You will have five seconds to press ESC key to display the boot menu. If you miss it simply reboot it again.
    12. Select the USB stick from the boot menu, and then you can proceed with installing Ubuntu.

@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Ubuntu Woes&#58; Mouse, Keyboard, and Ethernet Not Recognized At Boot
 tags: [ubuntu, linux, troubleshooting]
 published: true

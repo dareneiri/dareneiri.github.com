@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Really Weird DNS Issues with Office 365
 tags: [microsoft, office365]
 published: true
