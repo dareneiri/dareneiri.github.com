@@ -7,7 +7,7 @@ comments: true
 ---
 
 Please note that the latest version of Minimal Mistakes has tag support built in, so the process below is not required. Actually it was supported in [2016](https://github.com/mmistakes/minimal-mistakes/issues/243), and I originally wrote this in 2015. See [this an example of tag support in Minimal Mistakes here](https://mmistakes.github.io/minimal-mistakes/tags/)
-{% notice info %}
+{: .notice--warning}
 
 I really like using the Jekyll theme [Minimal Mistakes](https://mademistakes.com/work/minimal-mistakes-jekyll-theme/), made by [Michael Rose](https://mademistakes.com/). As I'm slowly working my way to build content on this site, I knew it would be helpful to organize my posts through tags, which Jekyll has support for through the [YAML front matter](http://jekyllbootstrap.com/lessons/jekyll-introduction.html#toc_9). However, much more is involved to really make use of tags and to have them nicely organized. There are [Jekyll tag plug-ins](http://jekyllrb.com/docs/plugins/#tags) you can add, but if you host your site on GitHub for free like me, they may not work if it's not part of the [GitHub plug-in repo](https://help.github.com/articles/using-jekyll-plugins-with-github-pages/).
 
